@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: "PT Sans";
+    // font-family: "Rajdhani", sans-serif;
+    box-sizing: border-box;
+}
+
+// /components/page-transition.js
+.page-dim {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1001;
+    background-color: black;
+    pointer-events: all;
+    opacity: 1;
+}
+
+// 404 page
+.missing-page {
+    font-family: "Rajdhani", sans-serif;
+    .main-segment {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../assets/astronout.png"), no-repeat,
+            center;
+        background-attachment: scroll;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+        min-height: 100vh;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .four-o-four {
+            font-size: 200px;
+        }
+
+        .missing-page-desc {
+            font-size: 30px;
+            color: rgb(224, 224, 224);
+            width: 450px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .back-button {
+            padding: 12px;
+            font-size: 30px;
+            border: 2px solid white;
+            cursor: pointer;
+            user-select: none;
+            transition: all 100ms ease-in-out;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: rgba($color: #fff, $alpha: 0.1);
+        }
+    }
+}

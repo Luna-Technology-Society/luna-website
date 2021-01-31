@@ -1,0 +1,666 @@
+.landing-page {
+    .first-segment {
+        @media (min-width: 0px) {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: column-reverse;
+            justify-content: center;
+            height: fit-content;
+            overflow: hidden;
+
+            .landing-left {
+                box-sizing: border-box;
+                height: fit-content;
+                width: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                    url("../assets/landing_biofeeback-min.jpg"), no-repeat, center;
+                background-attachment: scroll;
+                background-size: cover;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding: 50px;
+
+                .landing-left-heading {
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 50px;
+                    margin-bottom: 40px;
+                }
+
+                .landing-left-desc {
+                    font-size: 18px;
+                    color: rgb(231, 231, 231);
+                    margin-bottom: 40px;
+                }
+
+                .biofeedback_button {
+                    padding: 14px 22px;
+                    border: white 3px solid;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 24px;
+                    user-select: none;
+                    cursor: pointer;
+                    transition: all 200ms;
+                    text-decoration: none;
+                }
+
+                .biofeedback_button:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+
+            .landing-middle {
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                min-height: 30px;
+
+                .luna-logo {
+                    width: 85%;
+                    cursor: pointer;
+                    display: none;
+                }
+
+                .arrow-down {
+                    width: 50px;
+                    position: absolute;
+                    bottom: 50px;
+                    cursor: pointer;
+                    display: none;
+
+                    img {
+                        position: relative;
+                    }
+                }
+            }
+
+            .landing-right {
+                box-sizing: border-box;
+                height: fit-content;
+                width: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+                    url("../assets/landing_spacedev-min.jpg"), no-repeat, center;
+                background-attachment: scroll;
+                background-size: cover;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding: 50px;
+
+                .landing-right-heading {
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 50px;
+                    margin-bottom: 40px;
+                }
+
+                .landing-right-desc {
+                    font-size: 18px;
+                    color: rgb(231, 231, 231);
+                    margin-bottom: 40px;
+                }
+
+                .spacedev_button {
+                    padding: 14px 22px;
+                    border: white 3px solid;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 24px;
+                    user-select: none;
+                    cursor: pointer;
+                    transition: all 200ms;
+                    text-decoration: none;
+                }
+
+                .spacedev_button:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+        @media (min-width: 1100px) {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 100vh;
+
+            .landing-left {
+                min-height: 100%;
+                width: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                    url("../assets/landing_biofeeback-min.jpg"), no-repeat, center;
+                background-attachment: fixed;
+                background-size: cover;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                text-align: left;
+                padding: 0px;
+                padding-left: 70px;
+                padding-right: 140px;
+
+                .landing-left-heading {
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 50px;
+                    margin-bottom: 40px;
+                }
+
+                .landing-left-desc {
+                    font-size: 18px;
+                    color: rgb(231, 231, 231);
+                    margin-bottom: 40px;
+                }
+
+                .biofeedback_button {
+                    padding: 14px 22px;
+                    border: white 3px solid;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 24px;
+                    user-select: none;
+                    cursor: pointer;
+                    transition: all 200ms;
+                    text-decoration: none;
+                }
+
+                .biofeedback_button:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+
+            .landing-middle {
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                height: 100%;
+
+                .luna-logo {
+                    width: 85%;
+                    cursor: pointer;
+                    display: flex;
+                }
+
+                .arrow-down {
+                    width: 50px;
+                    position: absolute;
+                    bottom: 50px;
+                    cursor: pointer;
+                    display: flex;
+                }
+            }
+
+            .landing-right {
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+                    url("../assets/landing_spacedev-min.jpg"), no-repeat, center;
+                background-attachment: fixed;
+                background-size: cover;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                text-align: right;
+                padding: 0px;
+                padding-left: 140px;
+                padding-right: 70px;
+
+                .landing-right-heading {
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 50px;
+                    margin-bottom: 40px;
+                }
+
+                .landing-right-desc {
+                    font-size: 18px;
+                    color: rgb(231, 231, 231);
+                    margin-bottom: 40px;
+                }
+
+                .spacedev_button {
+                    padding: 14px 22px;
+                    border: white 3px solid;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 24px;
+                    user-select: none;
+                    cursor: pointer;
+                    transition: all 200ms;
+                    text-decoration: none;
+                }
+
+                .spacedev_button:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+        @media (min-width: 1330px) {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+            height: 100vh;
+
+            .landing-left {
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                    url("../assets/landing_biofeeback-min.jpg"), no-repeat, center;
+                background-attachment: fixed;
+                background-size: cover;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                text-align: left;
+                padding: 0px;
+                padding-left: 70px;
+                padding-right: 140px;
+
+                .landing-left-heading {
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 70px;
+                    margin-bottom: 40px;
+                }
+
+                .landing-left-desc {
+                    font-size: 20px;
+                    color: rgb(231, 231, 231);
+                    margin-bottom: 40px;
+                }
+
+                .biofeedback_button {
+                    padding: 14px 22px;
+                    border: white 3px solid;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 30px;
+                    user-select: none;
+                    cursor: pointer;
+                    transition: all 200ms;
+                    text-decoration: none;
+                }
+
+                .biofeedback_button:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+
+            .landing-middle {
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                height: 100%;
+
+                .luna-logo {
+                    width: 85%;
+                    cursor: pointer;
+                }
+
+                .arrow-down {
+                    width: 50px;
+                    position: absolute;
+                    bottom: 50px;
+                    cursor: pointer;
+                }
+            }
+
+            .landing-right {
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+                    url("../assets/landing_spacedev-min.jpg"), no-repeat, center;
+                background-attachment: fixed;
+                background-size: cover;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                text-align: right;
+                padding-left: 140px;
+                padding-right: 70px;
+
+                .landing-right-heading {
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 70px;
+                    margin-bottom: 40px;
+                }
+
+                .landing-right-desc {
+                    font-size: 20px;
+                    color: rgb(231, 231, 231);
+                    margin-bottom: 40px;
+                }
+
+                .spacedev_button {
+                    padding: 14px 22px;
+                    border: white 3px solid;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    font-family: "Rajdhani", sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 30px;
+                    user-select: none;
+                    cursor: pointer;
+                    transition: all 200ms;
+                    text-decoration: none;
+                }
+
+                .spacedev_button:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+    }
+    .about-us-segment {
+        @media (min-width: 0px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 130px;
+            padding-bottom: 130px;
+            overflow: hidden;
+
+            .about-us-header {
+                font-size: 40px;
+                font-weight: 600;
+                text-align: center;
+                width: fit-content;
+                margin-bottom: 30px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            .about-us-desc {
+                font-size: 20px;
+                text-align: center;
+                width: fit-content;
+                color: rgb(220, 220, 220);
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+        @media (min-width: 900px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 130px;
+            padding-bottom: 130px;
+
+            .about-us-header {
+                font-size: 50px;
+                font-weight: 600;
+                text-align: center;
+                width: 800px;
+                margin-bottom: 30px;
+                padding: 0px;
+            }
+
+            .about-us-desc {
+                font-size: 24px;
+                text-align: center;
+                width: 800px;
+                color: rgb(220, 220, 220);
+                padding: 0px;
+            }
+        }
+    }
+    .team-segment {
+        @media (min-width: 0px) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../assets/team-background.jpg"),
+                no-repeat, center;
+            background-attachment: scroll;
+            background-size: cover;
+            background-position: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            overflow: hidden;
+
+            .team-header {
+                width: 100%;
+                font-size: 54px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .team-members-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                text-align: center;
+                color: rgb(220, 220, 220);
+
+                .heading {
+                    font-size: 38px;
+                    font-weight: 100;
+                    font-family: "Rajdhani", sans-serif;
+                    margin-top: 20px;
+                }
+
+                .each-section {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: center;
+                    margin-top: 10px;
+
+                    .each-member {
+                        width: 200px;
+                        padding-top: 25px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-bottom: 25px;
+                        box-sizing: border-box;
+
+                        .member-picture {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            img {
+                                width: 75%;
+                                // border: white 1.6px solid;
+                                border-radius: 100%;
+                                box-sizing: border-box;
+                                box-shadow: black 2px 1px 5px;
+                            }
+                        }
+
+                        .member-name {
+                            margin-top: 14px;
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: rgb(221, 221, 221);
+                        }
+
+                        .member-role {
+                            margin-top: 6px;
+                            font-size: 16px;
+                            color: rgb(190, 190, 190);
+                        }
+                    }
+                }
+            }
+        }
+        @media (min-width: 900px) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../assets/team-background.jpg"),
+                no-repeat, center;
+            background-attachment: fixed;
+            background-size: cover;
+            padding-top: 80px;
+            padding-bottom: 80px;
+
+            .team-header {
+                font-size: 54px;
+                font-weight: 600;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .team-members-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                text-align: center;
+                color: rgb(220, 220, 220);
+
+                .heading {
+                    font-size: 38px;
+                    font-weight: 100;
+                    font-family: "Rajdhani", sans-serif;
+                    margin-top: 20px;
+                }
+
+                .each-section {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 10px;
+
+                    .each-member {
+                        width: 200px;
+                        padding-top: 25px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-bottom: 25px;
+                        box-sizing: border-box;
+
+                        .member-picture {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            img {
+                                width: 75%;
+                                // border: white 1.6px solid;
+                                border-radius: 100%;
+                                box-sizing: border-box;
+                                box-shadow: black 2px 1px 5px;
+                            }
+                        }
+
+                        .member-name {
+                            margin-top: 14px;
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: rgb(221, 221, 221);
+                        }
+
+                        .member-role {
+                            margin-top: 6px;
+                            font-size: 16px;
+                            color: rgb(190, 190, 190);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .our-partners-segment {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 130px;
+        padding-bottom: 130px;
+
+        .our-partners-header {
+            font-size: 50px;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .each-partner {
+            img {
+                height: 150px;
+            }
+        }
+    }
+}
