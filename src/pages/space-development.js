@@ -156,7 +156,7 @@ export default function SpaceDevelopment() {
           >
             Project "Mantis" is our teams current undertaking. The objective at
             hand is to establish a feature that will be able to surpass the
-            speed of sound. We intend to reach this goal in 2021.
+            speed of sound. We intend to reach this goal in 2023.
           </div>
           <img
             className="mantis-solidworks"

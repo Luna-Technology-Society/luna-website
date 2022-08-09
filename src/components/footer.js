@@ -78,8 +78,7 @@ export default function Footer(props) {
         </a>
       </div>
       <div className="footer-copyright">
-        Copyright ©2021 lunaSpaceDevelopment 2021 -
-        kontakt@lunatechnologysociety.pl
+        Copyright ©2022 LunaTech - info@lunatech.pl
       </div>
     </div>
   )
