@@ -147,15 +147,16 @@ export default function Landing() {
           OUR TEAM
         </div>
         <div className="team-members-container">
-          {/* <div className="heading" data-aos="zoom-in">
+          <div className="heading" data-aos="zoom-in">
             MANAGEMENT
-          </div> */}
+          </div>
           <div className="each-section managment-container">
             <div className="each-member" data-aos="zoom-in" data-aos-delay="0">
               <div className="member-picture">
                 <img src={tomoPic} alt="tomo profile pic"></img>
               </div>
               <div className="member-name">Tomasz Mróz</div>
+              <div className="member-role">CEO | Space Development Supervisor</div>
             </div>
             <div
               className="each-member"
@@ -166,6 +167,7 @@ export default function Landing() {
                 <img src={ignacyPic} alt="tomo profile pic"></img>
               </div>
               <div className="member-name">Ignacy Strojny</div>
+              <div className="member-role">CFO | Space Development</div>
             </div>
             <div
               className="each-member"
@@ -176,6 +178,7 @@ export default function Landing() {
                 <img src={konradPic} alt="tomo profile pic"></img>
               </div>
               <div className="member-name">Konrad Mędoń</div>
+              <div className="member-role">COO | Space Development</div>
             </div>
             <div
               className="each-member"
@@ -186,27 +189,63 @@ export default function Landing() {
                 <img src={olekPic} alt="tomo profile pic"></img>
               </div>
               <div className="member-name">Aleksander Pająk</div>
+              <div className="member-role">MEO | Space Development</div>
             </div>
           </div>
-          {/* <div className="heading" data-aos="zoom-in">
+          <div className="heading" data-aos="zoom-in">
             OTHER MEMBERS
-          </div> */}
+          </div>
           <div className="each-section others-container">
             <div className="each-member" data-aos="zoom-in" data-aos-delay="0">
-              <div className="member-picture">
+              {/* <div className="member-picture">
                 <img src={mateuszPic} alt="tomo profile pic"></img>
-              </div>
+              </div> */}
               <div className="member-name">Mateusz Szewczyk</div>
+              <div className="member-role">BioFeedback Supervisor</div>
             </div>
             <div
               className="each-member"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <div className="member-picture">
+              {/* <div className="member-picture">
                 <img src={oskarPic} alt="tomo profile pic"></img>
-              </div>
+              </div> */}
               <div className="member-name">Oskar Mróz</div>
+              <div className="member-role">Web Developer | IT</div>
+            </div>
+            <div
+              className="each-member"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              {/* <div className="member-picture">
+                <img src={oskarPic} alt="tomo profile pic"></img>
+              </div> */}
+              <div className="member-name">Bartłomiej Mróz</div>
+              <div className="member-role">Electronics | IT</div>
+            </div>
+            <div
+              className="each-member"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              {/* <div className="member-picture">
+                <img src={oskarPic} alt="tomo profile pic"></img>
+              </div> */}
+              <div className="member-name">Wojciech Damian</div>
+              <div className="member-role">BioFeedback</div>
+            </div>
+            <div
+              className="each-member"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              {/* <div className="member-picture">
+                <img src={oskarPic} alt="tomo profile pic"></img>
+              </div> */}
+              <div className="member-name">Zuzanna Mieczkowska</div>
+              <div className="member-role">Social MediaI | PR</div>
             </div>
           </div>
         </div>

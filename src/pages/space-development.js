@@ -4,6 +4,7 @@ import Header from "../components/header"
 import PageTransition from "../components/page-transition"
 import Aos from "aos"
 import "aos/dist/aos.css"
+import sample from "../assets//prototypeVideo.webm"
 
 import "../styles/space-development.scss"
 
@@ -63,6 +64,9 @@ export default function SpaceDevelopment() {
               READ MORE
             </div>
           </div>
+          <video className="videoTag" autoPlay loop muted style={{zIndex: -1}}>
+            <source src={sample} type="video/webm" />
+          </video>
         </div>
       </div>
       <div className="about-project-segment">
@@ -94,7 +98,7 @@ export default function SpaceDevelopment() {
               Luna space development was formed by a group of individuals with
               the same vision for defining, innovating and developing new ways
               to inspire upcoming generations with a mutual passion for space
-              epxloration. We are currently working on constructing a hybrid
+              exploration. We are currently working on constructing a hybrid
               propulsion system to launch our improved “mantis” rocket.
             </div>
             <div
@@ -156,7 +160,7 @@ export default function SpaceDevelopment() {
           >
             Project "Mantis" is our teams current undertaking. The objective at
             hand is to establish a feature that will be able to surpass the
-            speed of sound. We intend to reach this goal in 2023.
+            speed of sound. We intend to reach this goal in 2021.
           </div>
           <img
             className="mantis-solidworks"
