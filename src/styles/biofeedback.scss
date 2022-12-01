@@ -1,397 +1,232 @@
 .biofeedback-page {
     .first-segment {
-        @media (min-width: 0px) {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../assets/landing_biofeeback-min.jpg"),
-                no-repeat, center;
-            background-attachment: fixed;
-            background-size: cover;
-            height: 100vh;
-            width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../assets/landing_biofeeback-min.jpg"),
+            no-repeat, center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .first-segment-container {
+            width: 1000px;
+            font-family: "Rajdhani", sans-serif;
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
-            overflow: hidden;
+            justify-content: center;
+            align-items: flex-start;
 
-            .first-segment-container {
-                width: 100%;
-                font-family: "Rajdhani", sans-serif;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                padding-left: 50px;
-                padding-right: 50px;
+            .biofeedback-header {
+                font-size: 90px;
+                font-weight: 500;
+            }
 
-                .biofeedback-header {
-                    font-size: 40px;
-                    font-weight: 500;
-                }
+            .biofeedback-desc {
+                font-size: 30px;
+                margin-top: 40px;
+                width: 700px;
+                font-weight: 300;
+            }
 
-                .biofeedback-desc {
-                    font-size: 18px;
-                    margin-top: 40px;
-                    width: 100%;
-                    font-weight: 300;
-                }
+            .biofeedback-button {
+                margin-top: 40px;
+                padding: 12px;
+                font-size: 30px;
+                border: 2px solid white;
+                cursor: pointer;
+                user-select: none;
+                transition: all 100ms ease-in-out;
+            }
 
-                .biofeedback-button {
-                    margin-top: 40px;
-                    padding: 12px;
-                    font-size: 20px;
-                    border: 2px solid white;
-                    cursor: pointer;
-                    user-select: none;
-                    transition: all 100ms ease-in-out;
-                }
-                .biofeedback-button:hover {
-                    background-color: rgba(255, 255, 255, 0.1);
-                }
+            .biofeedback-button:hover {
+                background-color: rgba(255, 255, 255, 0.1);
             }
         }
-        @media (min-width: 430px) {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../assets/landing_biofeeback-min.jpg"),
-                no-repeat, center;
-            background-attachment: fixed;
-            background-size: cover;
-            height: 100vh;
-            width: 100%;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
+        @media (max-width: 1100px) {
             .first-segment-container {
                 width: 100%;
-                font-family: "Rajdhani", sans-serif;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                padding-left: 50px;
-                padding-right: 50px;
-
-                .biofeedback-header {
-                    font-size: 55px;
-                    font-weight: 500;
-                }
-
-                .biofeedback-desc {
-                    font-size: 18px;
-                    margin-top: 40px;
-                    width: 100%;
-                    font-weight: 300;
-                }
-
-                .biofeedback-button {
-                    margin-top: 40px;
-                    padding: 12px;
-                    font-size: 20px;
-                    border: 2px solid white;
-                    cursor: pointer;
-                    user-select: none;
-                    transition: all 100ms ease-in-out;
-                }
-                .biofeedback-button:hover {
-                    background-color: rgba(255, 255, 255, 0.1);
-                }
-            }
-        }
-        @media (min-width: 900px) {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../assets/landing_biofeeback-min.jpg"),
-                no-repeat, center;
-            background-attachment: fixed;
-            background-size: cover;
-            height: 100vh;
-            width: 100%;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-            .first-segment-container {
-                width: 100%;
-                font-family: "Rajdhani", sans-serif;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
                 padding-left: 50px;
                 padding-right: 50px;
 
                 .biofeedback-header {
                     font-size: 70px;
-                    font-weight: 500;
                 }
 
                 .biofeedback-desc {
                     font-size: 20px;
                     margin-top: 40px;
                     width: 600px;
-                    font-weight: 300;
                 }
 
                 .biofeedback-button {
-                    margin-top: 40px;
-                    padding: 12px;
                     font-size: 24px;
-                    border: 2px solid white;
-                    cursor: pointer;
-                    user-select: none;
-                    transition: all 100ms ease-in-out;
-                }
-                .biofeedback-button:hover {
-                    background-color: rgba(255, 255, 255, 0.1);
                 }
             }
-        }   
-        @media (min-width: 1100px) {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../assets/landing_biofeeback-min.jpg"),
-                no-repeat, center;
-            background-attachment: fixed;
-            background-size: cover;
-            height: 100vh;
-            width: 100%;
+        }
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
+        @media (max-width: 900px) {
             .first-segment-container {
-                width: 1000px;
-                font-family: "Rajdhani", sans-serif;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
+                width: 100%;
 
                 .biofeedback-header {
-                    font-size: 90px;
-                    font-weight: 500;
+                    font-size: 55px;
                 }
 
                 .biofeedback-desc {
-                    font-size: 30px;
+                    font-size: 18px;
                     margin-top: 40px;
-                    width: 700px;
-                    font-weight: 300;
+                    width: 100%;
                 }
 
                 .biofeedback-button {
-                    margin-top: 40px;
-                    padding: 12px;
-                    font-size: 30px;
-                    border: 2px solid white;
-                    cursor: pointer;
-                    user-select: none;
-                    transition: all 100ms ease-in-out;
+                    font-size: 20px;
                 }
-                .biofeedback-button:hover {
-                    background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        @media (max-width: 430px) {
+            overflow: hidden;
+
+            .first-segment-container {
+                width: 100%;
+
+                .biofeedback-header {
+                    font-size: 40px;
+                }
+
+                .biofeedback-desc {
+                    font-size: 18px;
+                    margin-top: 40px;
+                    width: 100%;
+                }
+
+                .biofeedback-button {
+                    font-size: 20px;
                 }
             }
         }
     }
+
     .about-project-segment {
-        @media (min-width: 0px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+        .about-project-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            width: 100%;
-            padding-top: 70px;
-            padding-bottom: 70px;
-            overflow: hidden;
-    
-            .about-project-container {
+            width: 1000px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .about-project-left {
+            margin-right: 40px;
+            position: relative;
+            opacity: 1;
+
+            img {
+                width: 400px;
+                padding-bottom: 60px;
+                margin-top: 0px;
+            }
+        }
+
+        .about-project-right {
+            text-align: right;
+
+            .about-project-header {
+                font-size: 50px;
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+
+            .about-project-desc {
+                font-size: 20px;
+                font-weight: 300;
+                color: rgb(202, 202, 202);
+                margin-bottom: 20px;
+            }
+
+            .about-project-follow-us {
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
-                width: 100%;
-                padding-left: 30px;
-                padding-right: 30px;
-                position: relative;
-            }
-    
-            .about-project-left {
-                margin-right: 40px;
-                position: absolute;
-                opacity: 0.15;
-                img {
-                    width: 400px;
-                    padding-bottom: 0px;
-                    margin-top: 0px;
+                justify-content: flex-end;
+
+                span {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: rgb(216, 216, 216);
                 }
-            }
-    
-            .about-project-right {
-                text-align: right;
-                .about-project-header {
-                    font-size: 36px;
-                    margin-bottom: 20px;
-                    font-weight: 600;
-                }
-                .about-project-desc {
-                    font-size: 18px;
-                    font-weight: 300;
-                    color: rgb(202, 202, 202);
-                    margin-bottom: 20px;
-                }
-                .about-project-follow-us {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-    
-                    span {
-                        font-size: 20px;
-                        font-weight: 700;
-                        color: rgb(216, 216, 216);
+
+                .media-icons {
+                    .each-icon {
+                        height: 30px;
+                        margin-left: 14px;
+                        cursor: pointer;
                     }
-                    .media-icons {
-                        .each-icon {
-                            height: 30px;
-                            margin-left: 14px;
-                            cursor: pointer;
-                        }
-                        .each-icon:hover {
-                            opacity: 0.9;
-                        }
+
+                    .each-icon:hover {
+                        opacity: 0.9;
                     }
                 }
             }
         }
-        @media (min-width: 600px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+
+        @media (max-width: 1100px) {
             padding-top: 70px;
             padding-bottom: 70px;
-    
+
             .about-project-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 width: 100%;
                 padding-left: 50px;
                 padding-right: 50px;
             }
-    
+
             .about-project-left {
-                margin-right: 40px;
                 position: absolute;
                 opacity: 0.15;
+
                 img {
-                    width: 400px;
                     padding-bottom: 0px;
                     margin-top: 50px;
                 }
             }
-    
-            .about-project-right {
-                text-align: right;
-                .about-project-header {
-                    font-size: 50px;
-                    margin-bottom: 20px;
-                    font-weight: 600;
-                }
-                .about-project-desc {
-                    font-size: 20px;
-                    font-weight: 300;
-                    color: rgb(202, 202, 202);
-                    margin-bottom: 20px;
-                }
-                .about-project-follow-us {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-    
-                    span {
-                        font-size: 20px;
-                        font-weight: 700;
-                        color: rgb(216, 216, 216);
-                    }
-                    .media-icons {
-                        .each-icon {
-                            height: 30px;
-                            margin-left: 14px;
-                            cursor: pointer;
-                        }
-                        .each-icon:hover {
-                            opacity: 0.9;
-                        }
-                    }
-                }
-            }
         }
-        @media (min-width: 1100px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 30px;
-    
+
+        @media (max-width: 600px) {
+            
+            overflow: hidden;
+
             .about-project-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 1000px;
-                padding-left: 0px;
-                padding-right: 0px;
-            }
-    
-            .about-project-left {
-                margin-right: 40px;
+                padding-left: 30px;
+                padding-right: 30px;
                 position: relative;
-                opacity: 1;
-                img {
-                    width: 400px;
-                    padding-bottom: 60px;
-                    margin-top: 0px;
-                }
             }
-    
+
             .about-project-right {
-                text-align: right;
                 .about-project-header {
-                    font-size: 50px;
-                    margin-bottom: 20px;
-                    font-weight: 600;
+                    font-size: 36px;
                 }
+
                 .about-project-desc {
-                    font-size: 20px;
-                    font-weight: 300;
-                    color: rgb(202, 202, 202);
-                    margin-bottom: 20px;
-                }
-                .about-project-follow-us {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-    
-                    span {
-                        font-size: 20px;
-                        font-weight: 700;
-                        color: rgb(216, 216, 216);
-                    }
-                    .media-icons {
-                        .each-icon {
-                            height: 30px;
-                            margin-left: 14px;
-                            cursor: pointer;
-                        }
-                        .each-icon:hover {
-                            opacity: 0.9;
-                        }
-                    }
+                    font-size: 18px;
                 }
             }
         }
+
+        
     }
+
     .next-segment {
         padding-top: 100px;
         padding-bottom: 100px;
