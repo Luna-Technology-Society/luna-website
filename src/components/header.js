@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useRef } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { scroller } from "react-scroll"
-import { document, exists, window } from "browser-monads"
+import { exists, window } from "browser-monads"
 
 import main_logo from "../assets/luna_logo.jpg"
 import logo_biofeedback from "../assets/logo-biofeedback.png"
