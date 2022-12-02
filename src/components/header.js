@@ -24,6 +24,9 @@ export default function Header(props) {
     if (props.isSpaceDev) {
       setLogo(logo_spacedev)
     }
+    if (props.isEducation) {
+      setLogo(main_logo)
+    }
   }, [])
 
   const updateHeaderStatus = () => {

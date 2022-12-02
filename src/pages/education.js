@@ -24,7 +24,7 @@ export default function Education() {
   })
   return (
     <div className="education-page">
-      <Header isSpaceDev />
+      <Header isEducation />
       <PageTransition
         duration={500}
         delay={300}
