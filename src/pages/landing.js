@@ -40,11 +40,12 @@ export default function Landing() {
         releasePointerEvents={600}
       ></PageTransition>
       <div className="first-segment" name="top">
+        <div className="linear-bg-dim"/>
         <div className="landing-left">
           <div
             className="landing-left-heading"
             data-aos="fade-right"
-            data-aos-delay="500"
+            data-aos-delay="0"
             data-aos-duration="750"
           >
             LUNA <br />
@@ -53,7 +54,7 @@ export default function Landing() {
           <div
             className="landing-left-desc"
             data-aos="fade-right"
-            data-aos-delay="600"
+            data-aos-delay="100"
             data-aos-duration="750"
           >
             Luna Biofeedback was designed to create ground-breaking technology
@@ -61,7 +62,7 @@ export default function Landing() {
           </div>
           <div
             data-aos="fade-right"
-            data-aos-delay="700"
+            data-aos-delay="200"
             data-aos-duration="750"
           >
             <Link to="/biofeedback/" className="biofeedback_button">
@@ -74,7 +75,7 @@ export default function Landing() {
           <div
             className="landing-middle-heading"
             data-aos="zoom-in"
-            data-aos-delay="800"
+            data-aos-delay="300"
             data-aos-duration="750"
           >
             LUNA
@@ -84,7 +85,7 @@ export default function Landing() {
           <div
             className="landing-middle-desc"
             data-aos="zoom-in"
-            data-aos-delay="900"
+            data-aos-delay="400"
             data-aos-duration="750"
           >
             Inspiring young minds to uncover the wonders of science & technology. 
@@ -92,7 +93,7 @@ export default function Landing() {
           </div>
           <div
             data-aos="zoom-in"
-            data-aos-delay="1000"
+            data-aos-delay="500"
             data-aos-duration="750"
           >
             <Link to="/education/" className="education_button">
@@ -105,7 +106,7 @@ export default function Landing() {
           <div
             className="landing-right-heading"
             data-aos="fade-left"
-            data-aos-delay="1100"
+            data-aos-delay="600"
             data-aos-duration="750"
           >
             LUNA SPACE
@@ -115,7 +116,7 @@ export default function Landing() {
           <div
             className="landing-right-desc"
             data-aos="fade-left"
-            data-aos-delay="1200"
+            data-aos-delay="700"
             data-aos-duration="750"
           >
             Luna space development was established by a group of individuals who
@@ -124,7 +125,7 @@ export default function Landing() {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-delay="1300"
+            data-aos-delay="800"
             data-aos-duration="750"
           >
             <Link to="/space-development/" className="spacedev_button">
