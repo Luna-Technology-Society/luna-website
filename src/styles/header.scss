@@ -8,14 +8,11 @@
     background-color: rgba($color: #000000, $alpha: 0);
     color: rgb(243, 243, 243);
     height: 100px;
-    // top: -100px;
     transition: transform 300ms ease-in-out;
     z-index: 1000;
-    padding-left: auto;
-    padding-left: auto;
     padding-right: 50px;
     padding-left: 50px;
-    transition: background 200ms ease-in-out;
+    transition: background 200ms ease-in;
 
     .header-container {
         display: flex;
@@ -68,24 +65,24 @@
             align-items: flex-start;
             justify-content: space-around;
             flex-direction: column;
-            width: 240px;
+            width: 210px;
             padding: 20px 20px;
-            padding-top: 90px;
+            padding-top: 100px;
             z-index: -1;
             left: -40px;
             top: 0px;
-            background-color: rgba($color: #000000, $alpha: 0.8);
+            background-color: rgba($color: #000000, $alpha: 1);
             opacity: 0;
             pointer-events: none;
             transition: all 300ms ease-in-out;
 
             .dd-each {
                 padding: 10px 20px;
-                font-size: 16px;
+                font-size: 15px;
             }
             
             .dd-each:hover {
-                opacity: 0.85;
+                opacity: 0.75;
             }
         }
 
@@ -103,54 +100,58 @@
         opacity: 1;
     }
 
-    .dropdownable:hover > .dropdown {
+    .dropdownable:hover > .dropdown, .dropdown:hover {
         pointer-events: all;
         opacity: 1;
     }
+}
 
-    @media (max-width: 790px) {
-        padding-left: 50px;
-        padding-right: 50px;
-    
-        .header-container {
+@media (max-width: 620px) {
+    .header {
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000000;
 
-            .hamburger {
-                display: flex;
-                pointer-events: all;
-                position: absolute;
-                z-index: 1002;
-                top: 21px;
-                right: 35px;
-                cursor: pointer;
-            }
-        }
-        
-        .header-navigation {
-            position: absolute;
-            right: 0px;
-            top: 0px;
+    .header-container {
+        .each-link { display: none;}
+
+        .hamburger {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            width: 240px;
-            padding: 35px;
-            padding-top: 70px;
-            background-color: black;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 200ms ease-in-out;
-    
-            .each-link {
-                margin-top: 25px;
-            }
-        }
-
-        .show-navigation {
-            opacity: 1;
             pointer-events: all;
+            position: absolute;
+            z-index: 1002;
+            top: 40px;
+            right: 45px;
+            cursor: pointer;
         }
     }
+    
+    .header-navigation {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 240px;
+        padding: 35px;
+        padding-top: 70px;
+        background-color: black;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 200ms ease-in-out;
+
+        .each-link {
+            margin-top: 25px;
+        }
+    }
+
+    .show-navigation {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
 }
 
 .show-header {
