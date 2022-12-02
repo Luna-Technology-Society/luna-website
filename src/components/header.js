@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { scroller } from "react-scroll"
 import { exists, window } from "browser-monads"
 
-import main_logo from "../assets/navigation/luna_logo.jpg"
+import main_logo from "../assets/navigation/luna_tech_soc.png"
 import logo_biofeedback from "../assets/navigation/logo-biofeedback.png"
 import logo_spacedev from "../assets/navigation/logo-spacedev.png"
 
@@ -28,6 +28,17 @@ export default function Header(props) {
       setLogo(main_logo)
     }
   }, [])
+
+  useEffect(() => {
+    if (props.isLanding && exists(window)) {
+      window.addEventListener("scroll", updateHeaderStatus)
+    }
+    return () => {
+      if (props.isLanding && exists(window)) {
+        window.removeEventListener("scroll", updateHeaderStatus)
+      }
+    }
+  }, [props.isLanding, window])
 
   const updateHeaderStatus = () => {
     if (!props.isLanding || window.scrollY >= 20) {
@@ -60,14 +71,24 @@ export default function Header(props) {
     }, 100)
   }
 
-  if (props.isLanding && exists(window)) {
-    // this is a memory leak! I shall fix it later,
-    // it is not causing much harm the way it is right now
-    window.addEventListener("scroll", updateHeaderStatus)
-  }
   return (
     <div className={"header" + (navbar ? " show-header" : "")}>
       <div className="header-container">
+        {/* =============== HOME =============== */}
+        <div className="each-link" onClick={scrollToTop}>
+          {props.isLanding ? <div>HOME</div> : <Link to="/">HOME</Link>}
+        </div>
+
+        {/* =============== EDUCATION =============== */}
+        <div className="each-link" onClick={scrollToTop}>
+          {props.isEducation ? (
+            <div>EDUCATION</div>
+          ) : (
+            <Link to="/education/">EDUCATION</Link>
+          )}
+        </div>
+
+        {/* =============== LOGO =============== */}
         <div
           className="logo-container"
           onClick={props.isLanding ? scrollToTop : () => {}}
@@ -76,33 +97,38 @@ export default function Header(props) {
             <img src={logo} alt="logo"></img>
           </Link>
         </div>
-        <div
-          className={
-            "header-navigation" + (displayDropdownNav ? " show-navigation" : "")
-          }
-        >
-          <div className="each-link" onClick={scrollToTop}>
-            {props.isLanding ? <div>HOME</div> : <Link to="/">HOME</Link>}
-          </div>
-          <div className="each-link" onClick={scrollToAboutUs}>
-            {props.isLanding ? (
-              <div>ABOUT US</div>
+
+        {/* =============== PROJECTS =============== */}
+        <div className="each-link dropdownable">
+          <div >PROJECTS</div>
+          <div className="dropdown">
+            <div className="dd-each" onClick={scrollToTop}>
+            {props.isBiofeedback ? (
+              <div>BIOFEEDBACK</div>
             ) : (
-              <Link to="/">ABOUT US</Link>
+              <Link to="/biofeedback/">BIOFEEDBACK</Link>
             )}
-          </div>
-          <div className="each-link" onClick={scrollToTop}>
-            <Link to="/biofeedback/">BIOFEEDBACK</Link>
-          </div>
-          <div className="each-link" onClick={scrollToTop}>
+            </div>
+            <div className="dd-each" onClick={scrollToTop}>
             {props.isSpaceDev ? (
               <div>SPACE DEVELOPMENT</div>
             ) : (
               <Link to="/space-development/">SPACE DEVELOPMENT</Link>
             )}
+            </div>
           </div>
         </div>
 
+        {/* =============== CONTACT =============== */}
+        <div className="each-link" onClick={scrollToTop}>
+          {props.isLanding ? (
+            <div>CONTACT</div>
+          ) : (
+            <Link to="/">CONTACT</Link>
+          )}
+        </div>
+
+        {/* =============== (MOBILE NAVIGATION ICON) =============== */}
         <div
           className="hamburger"
           onClick={() => {
