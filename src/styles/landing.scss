@@ -27,7 +27,7 @@
                 font-family: "Rajdhani", sans-serif;
                 color: white;
                 font-weight: 600;
-                font-size: 70px;
+                font-size: 50px;
                 margin-bottom: 40px;
             }
 
@@ -61,24 +61,56 @@
 
 
         .landing-middle {
-            width: 400px;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+                url("../assets/landing_education_bg.jpg"), no-repeat, center;
+            background-attachment: fixed;
+            background-size: cover;
+
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            position: relative;
-            height: 100%;
+            justify-content: center;
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
 
-            .luna-logo {
-                width: 85%;
-                cursor: pointer;
+            .landing-middle-heading {
+                font-family: "Rajdhani", sans-serif;
+                color: white;
+                font-weight: 600;
+                font-size: 50px;
+                margin-bottom: 40px;
+                text-align: center;
             }
 
-            .arrow-down {
-                width: 50px;
-                position: absolute;
-                bottom: 50px;
+            .landing-middle-desc {
+                font-size: 20px;
+                color: rgb(231, 231, 231);
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .education_button {
+                padding: 14px 22px;
+                border: white 3px solid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-family: "Rajdhani", sans-serif;
+                color: white;
+                font-weight: 600;
+                font-size: 30px;
+                user-select: none;
                 cursor: pointer;
+                transition: all 200ms;
+                text-decoration: none;
+            }
+
+            .spacedev_button:hover {
+                background-color: rgba(255, 255, 255, 0.1);
             }
         }
 
@@ -102,7 +134,7 @@
                 font-family: "Rajdhani", sans-serif;
                 color: white;
                 font-weight: 600;
-                font-size: 70px;
+                font-size: 50px;
                 margin-bottom: 40px;
             }
 

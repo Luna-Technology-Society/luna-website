@@ -6,13 +6,8 @@ import "aos/dist/aos.css"
 
 import Footer from "../components/footer"
 
-import lunaLogo from "../assets/luna_logo.jpg"
-import arrowDown from "../assets/arrow-down.svg"
-
 import tomoPic from "../assets/tomo.png"
 import ignacyPic from "../assets/ignacy.png"
-import oskarPic from "../assets/oskar.png"
-import mateuszPic from "../assets/mateusz.png"
 import olekPic from "../assets/olek.png"
 import konradPic from "../assets/konrad.png"
 import naukowaWioska from "../assets/naukowawioska.png"
@@ -67,34 +62,47 @@ export default function Landing() {
             data-aos-duration="750"
           >
             <Link to="/biofeedback/" className="biofeedback_button">
-              {"<"} GO TO PAGE
+              GO TO PAGE
             </Link>
           </div>
         </div>
+
         <div className="landing-middle" onClick={scrollToAboutUs}>
-          <img
-            src={lunaLogo}
-            alt="luna technology society"
-            className="luna-logo"
+          <div
+            className="landing-middle-heading"
             data-aos="fade-in"
-            data-aos-delay="1500"
+            data-aos-delay="800"
             data-aos-duration="750"
-          ></img>
-          <img
-            src={arrowDown}
-            alt="v"
-            className="arrow-down"
+          >
+            LUNA
+            <br />
+            EDUCATION
+          </div>
+          <div
+            className="landing-middle-desc"
             data-aos="fade-in"
-            data-aos-delay="1900"
+            data-aos-delay="900"
             data-aos-duration="750"
-            data-aos-anchor-placement="bottom-bottom"
-          ></img>
+          >
+            Inspiring young minds to uncover the wonders of science & technology. 
+            We host workshops and educational campaigns for schools and businesses in Poland.
+          </div>
+          <div
+            data-aos="fade-middle"
+            data-aos-delay="1000"
+            data-aos-duration="750"
+          >
+            <Link to="/education/" className="education_button">
+              GO TO PAGE
+            </Link>
+          </div>
         </div>
+
         <div className="landing-right">
           <div
             className="landing-right-heading"
             data-aos="fade-left"
-            data-aos-delay="800"
+            data-aos-delay="1100"
             data-aos-duration="750"
           >
             LUNA SPACE
@@ -104,7 +112,7 @@ export default function Landing() {
           <div
             className="landing-right-desc"
             data-aos="fade-left"
-            data-aos-delay="900"
+            data-aos-delay="1200"
             data-aos-duration="750"
           >
             Luna space development was established by a group of individuals who
@@ -113,15 +121,16 @@ export default function Landing() {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-delay="1000"
+            data-aos-delay="1300"
             data-aos-duration="750"
           >
             <Link to="/space-development/" className="spacedev_button">
-              GO TO PAGE {">"}
+              GO TO PAGE
             </Link>
           </div>
         </div>
       </div>
+
       <div className="about-us-segment" name="about-us">
         <div
           className="about-us-header"
@@ -255,7 +264,7 @@ export default function Landing() {
           OUR PARTNERS
         </div>
         <a className="each-partner" data-aos="zoom-in" href="http://scienceville.pl/">
-          <img src={naukowaWioska} alt="Naukowa Wioska"/>
+          <img src={naukowaWioska} alt="Naukowa Wioska" />
         </a>
       </div>
       <Footer isLanding />
