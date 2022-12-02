@@ -4,10 +4,10 @@ import { Link } from "gatsby"
 
 import "../styles/footer.scss"
 
-import facebook from "../assets/facebook.svg"
-import instagram from "../assets/instagram.svg"
-import twitter from "../assets/twitter.svg"
-import youtube from "../assets/youtube.svg"
+import facebook from "../assets/svg_icons/facebook.svg"
+import instagram from "../assets/svg_icons/instagram.svg"
+import twitter from "../assets/svg_icons/twitter.svg"
+import youtube from "../assets/svg_icons/youtube.svg"
 
 export default function Footer(props) {
   // useEffect(()=>{

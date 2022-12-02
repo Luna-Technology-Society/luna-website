@@ -2,11 +2,13 @@ import React, { Fragment } from "react"
 import { Router as MyRouter } from "@reach/router"
 import { Helmet } from "react-helmet"
 
+// components
 import Landing from "./landing"
 import SpaceDevelopment from "./space-development"
 import BioFeedback from "./biofeedback"
 import Education from "./education"
 
+// stylesheet
 import "../styles/index.scss"
 
 export default function Home() {

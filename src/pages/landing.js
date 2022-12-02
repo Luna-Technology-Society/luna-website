@@ -4,17 +4,20 @@ import { Link } from "gatsby"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
+// components
 import Footer from "../components/footer"
-
-import tomoPic from "../assets/tomo.png"
-import ignacyPic from "../assets/ignacy.png"
-import olekPic from "../assets/olek.png"
-import konradPic from "../assets/konrad.png"
-import naukowaWioska from "../assets/naukowawioska.png"
-
-import "../styles/landing.scss"
-import PageTransition from "../components/page-transition"
 import Header from "../components/header"
+import PageTransition from "../components/page-transition"
+
+// images
+import tomoPic from "../assets/profile_pics/tomo.png"
+import ignacyPic from "../assets/profile_pics/ignacy.png"
+import olekPic from "../assets/profile_pics/olek.png"
+import konradPic from "../assets/profile_pics/konrad.png"
+import naukowaWioska from "../assets/landing/naukowawioska.png"
+
+// stylesheet
+import "../styles/landing.scss"
 
 const scrollToAboutUs = () => {
   scroller.scrollTo("about-us", {
@@ -70,7 +73,7 @@ export default function Landing() {
         <div className="landing-middle">
           <div
             className="landing-middle-heading"
-            data-aos="fade-in"
+            data-aos="zoom-in"
             data-aos-delay="800"
             data-aos-duration="750"
           >
@@ -80,7 +83,7 @@ export default function Landing() {
           </div>
           <div
             className="landing-middle-desc"
-            data-aos="fade-in"
+            data-aos="zoom-in"
             data-aos-delay="900"
             data-aos-duration="750"
           >
@@ -88,7 +91,7 @@ export default function Landing() {
             We host workshops and educational campaigns for schools and businesses in Poland.
           </div>
           <div
-            data-aos="fade-middle"
+            data-aos="zoom-in"
             data-aos-delay="1000"
             data-aos-duration="750"
           >

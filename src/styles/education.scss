@@ -1,6 +1,6 @@
 .education-page {
     .first-segment {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/education_bg.jpg"), no-repeat, center;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/education/education_bg.jpg"), no-repeat, center;
         background-attachment: fixed;
         background-size: cover;
         height: 100vh;
@@ -62,7 +62,7 @@
 
         // When window width drops under 1100px
         @media (max-width: 1100px) {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/education_bg.jpg"), no-repeat, center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/education/education_bg.jpg"), no-repeat, center;
 
             .first-segment-container {
                 width: 800px;
@@ -104,7 +104,7 @@
 
         // When window width drops under 400px
         @media (max-width: 400px) {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/education_bg.jpg"), no-repeat, center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/education/education_bg.jpg"), no-repeat, center;
 
             .first-segment-container {
                 .education-header {
@@ -208,7 +208,7 @@
     }
 
     .workshops-segment {
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../assets/mantis-background-min.jpg"), no-repeat, center;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("../assets/space_dev/mantis-background-min.jpg"), no-repeat, center;
         background-attachment: fixed;
         background-size: cover;
         display: flex;

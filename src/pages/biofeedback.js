@@ -3,16 +3,20 @@ import { scroller } from "react-scroll"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
-import brain from "../assets/brain.png"
-import facebook from "../assets/facebook-light.svg"
-import instagram from "../assets/instagram-light.svg"
-import twitter from "../assets/twitter-light.svg"
-import youtube from "../assets/youtube-light.svg"
+// components
+import PageTransition from "../components/page-transition"
 import Footer from "../components/footer"
 import Header from "../components/header"
 
+// images
+import brain from "../assets/biofeedback/brain.png"
+import facebook from "../assets/svg_icons/facebook-light.svg"
+import instagram from "../assets/svg_icons/instagram-light.svg"
+import twitter from "../assets/svg_icons/twitter-light.svg"
+import youtube from "../assets/svg_icons/youtube-light.svg"
+
+// stylesheet
 import "../styles/biofeedback.scss"
-import PageTransition from "../components/page-transition"
 
 const scrollToAboutProject = () => {
   scroller.scrollTo("about-project-segment", {

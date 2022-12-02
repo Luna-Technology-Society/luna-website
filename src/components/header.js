@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import { scroller } from "react-scroll"
 import { exists, window } from "browser-monads"
 
-import main_logo from "../assets/luna_logo.jpg"
-import logo_biofeedback from "../assets/logo-biofeedback.png"
-import logo_spacedev from "../assets/logo-spacedev.png"
+import main_logo from "../assets/navigation/luna_logo.jpg"
+import logo_biofeedback from "../assets/navigation/logo-biofeedback.png"
+import logo_spacedev from "../assets/navigation/logo-spacedev.png"
 
 import "../styles/header.scss"
 

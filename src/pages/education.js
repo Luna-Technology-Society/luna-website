@@ -1,15 +1,19 @@
 import React, { useEffect } from "react"
-import Footer from "../components/footer"
-import Header from "../components/header"
-import PageTransition from "../components/page-transition"
+import { scroller } from "react-scroll"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
-import "../styles/education.scss"
+// components
+import Footer from "../components/footer"
+import Header from "../components/header"
+import PageTransition from "../components/page-transition"
 
-import workshops from "../assets/workshops_img.jpg"
-import campaigns from "../assets/campaigns_img.jpg"
-import { scroller } from "react-scroll"
+// images
+import workshops from "../assets/education/workshops_img.jpg"
+import campaigns from "../assets/education/campaigns_img.jpg"
+
+// stylesheet
+import "../styles/education.scss"
 
 export default function Education() {
   const scrollToAboutProject = () => {

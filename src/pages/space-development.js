@@ -1,21 +1,25 @@
 import React, { useEffect } from "react"
+import { scroller } from "react-scroll"
+import Aos from "aos"
+import "aos/dist/aos.css"
+
+// components
 import Footer from "../components/footer"
 import Header from "../components/header"
 import PageTransition from "../components/page-transition"
-import Aos from "aos"
-import "aos/dist/aos.css"
-import sample from "../assets//prototypeVideo.webm"
 
+// images & videos
+import facebook from "../assets/svg_icons/facebook-light.svg"
+import instagram from "../assets/svg_icons/instagram-light.svg"
+import twitter from "../assets/svg_icons/twitter-light.svg"
+import youtube from "../assets/svg_icons/youtube-light.svg"
+import astronout from "../assets/space_dev/astronout.png"
+import mantis from "../assets/space_dev/mantis.jpg"
+import prototype from "../assets/space_dev/prototype.jpg"
+import sample from "../assets/space_dev/prototypeVideo.webm"
+
+// stylesheet
 import "../styles/space-development.scss"
-
-import astronout from "../assets/astronout.png"
-import facebook from "../assets/facebook-light.svg"
-import instagram from "../assets/instagram-light.svg"
-import twitter from "../assets/twitter-light.svg"
-import youtube from "../assets/youtube-light.svg"
-import mantis from "../assets/mantis.jpg"
-import prototype from "../assets/prototype.jpg"
-import { scroller } from "react-scroll"
 
 export default function SpaceDevelopment() {
   const scrollToAboutProject = () => {

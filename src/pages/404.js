@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+
+// components
 import PageTransition from "../components/page-transition"
 
 export default function MissingPage() {
