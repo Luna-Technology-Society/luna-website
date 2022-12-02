@@ -15,6 +15,7 @@ import ignacyPic from "../assets/profile_pics/ignacy.png"
 import olekPic from "../assets/profile_pics/olek.png"
 import konradPic from "../assets/profile_pics/konrad.png"
 import naukowaWioska from "../assets/landing/naukowawioska.png"
+import arrowDown from "../assets/svg_icons/arrow-down.svg"
 
 // stylesheet
 import "../styles/landing.scss"
@@ -40,7 +41,17 @@ export default function Landing() {
         releasePointerEvents={600}
       ></PageTransition>
       <div className="first-segment" name="top">
-        <div className="linear-bg-dim"/>
+        <div className="linear-bg-dim" />
+        <img
+          src={arrowDown}
+          alt="v"
+          className="arrow-down"
+          data-aos="fade-down"
+          data-aos-delay="1000"
+          data-aos-duration="750"
+          data-aos-anchor-placement="bottom-bottom"
+          onClick={scrollToAboutUs}
+        />
         <div className="landing-left">
           <div
             className="landing-left-heading"
@@ -88,14 +99,11 @@ export default function Landing() {
             data-aos-delay="400"
             data-aos-duration="750"
           >
-            Inspiring young minds to uncover the wonders of science & technology. 
-            We host workshops and educational campaigns for schools and businesses in Poland.
+            Inspiring young minds to uncover the wonders of science &
+            technology. We host workshops and educational campaigns for schools
+            and businesses in Poland.
           </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="500"
-            data-aos-duration="750"
-          >
+          <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="750">
             <Link to="/education/" className="education_button">
               GO TO PAGE
             </Link>
@@ -169,7 +177,9 @@ export default function Landing() {
                 <img src={tomoPic} alt="tomo profile pic"></img>
               </div>
               <div className="member-name">Tomasz Mróz</div>
-              <div className="member-role">CEO | Space Development Supervisor</div>
+              <div className="member-role">
+                CEO | Space Development Supervisor
+              </div>
             </div>
             <div
               className="each-member"
@@ -267,7 +277,11 @@ export default function Landing() {
         <div className="our-partners-header" data-aos="zoom-in">
           OUR PARTNERS
         </div>
-        <a className="each-partner" data-aos="zoom-in" href="http://scienceville.pl/">
+        <a
+          className="each-partner"
+          data-aos="zoom-in"
+          href="http://scienceville.pl/"
+        >
           <img src={naukowaWioska} alt="Naukowa Wioska" />
         </a>
       </div>
