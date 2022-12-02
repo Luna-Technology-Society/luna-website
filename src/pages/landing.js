@@ -16,13 +16,13 @@ import "../styles/landing.scss"
 import PageTransition from "../components/page-transition"
 import Header from "../components/header"
 
-// const scrollToAboutUs = () => {
-//   scroller.scrollTo("about-us", {
-//     duration: 750,
-//     delay: 0,
-//     smooth: "easeInOutQuart",
-//   })
-// }
+const scrollToAboutUs = () => {
+  scroller.scrollTo("about-us", {
+    duration: 750,
+    delay: 0,
+    smooth: "easeInOutQuart",
+  })
+}
 
 export default function Landing() {
   useEffect(() => {
