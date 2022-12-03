@@ -75,12 +75,22 @@ export default function Header(props) {
     <div className={"header" + (navbar ? " show-header" : "")}>
       <div className="header-container">
         {/* =============== HOME =============== */}
-        <div className="each-link" onClick={scrollToTop}>
+        <div
+          className={
+            "each-link el-home " + (displayDropdownNav ? "show-hamb-dd" : "")
+          }
+          onClick={scrollToTop}
+        >
           {props.isLanding ? <div>HOME</div> : <Link to="/">HOME</Link>}
         </div>
 
         {/* =============== EDUCATION =============== */}
-        <div className="each-link" onClick={scrollToTop}>
+        <div
+          className={
+            "each-link el-edu " + (displayDropdownNav ? "show-hamb-dd" : "")
+          }
+          onClick={scrollToTop}
+        >
           {props.isEducation ? (
             <div>EDUCATION</div>
           ) : (
@@ -99,34 +109,48 @@ export default function Header(props) {
         </div>
 
         {/* =============== PROJECTS =============== */}
-        <div className="each-link dropdownable">
-          <div >PROJECTS</div>
+        <div
+          className={
+            "each-link dropdownable el-projects " +
+            (displayDropdownNav ? "show-hamb-dd" : "")
+          }
+        >
+          <div>PROJECTS</div>
           <div className="dropdown">
             <div className="dd-each" onClick={scrollToTop}>
-            {props.isBiofeedback ? (
-              <div>BIOFEEDBACK</div>
-            ) : (
-              <Link to="/biofeedback/">BIOFEEDBACK</Link>
-            )}
+              {props.isBiofeedback ? (
+                <div>BIOFEEDBACK</div>
+              ) : (
+                <Link to="/biofeedback/">BIOFEEDBACK</Link>
+              )}
             </div>
             <div className="dd-each" onClick={scrollToTop}>
-            {props.isSpaceDev ? (
-              <div>SPACE DEVELOPMENT</div>
-            ) : (
-              <Link to="/space-development/">SPACE DEVELOPMENT</Link>
-            )}
+              {props.isSpaceDev ? (
+                <div>SPACE DEVELOPMENT</div>
+              ) : (
+                <Link to="/space-development/">SPACE DEVELOPMENT</Link>
+              )}
             </div>
           </div>
         </div>
 
         {/* =============== CONTACT =============== */}
-        <div className="each-link" onClick={scrollToTop}>
-          {props.isLanding ? (
-            <div>CONTACT</div>
-          ) : (
-            <Link to="/">CONTACT</Link>
-          )}
+        <div
+          className={
+            "each-link el-contact " + (displayDropdownNav ? "show-hamb-dd" : "")
+          }
+          onClick={scrollToTop}
+        >
+          {props.isLanding ? <div>CONTACT</div> : <Link to="/">CONTACT</Link>}
         </div>
+
+        {/* =============== CONTACT =============== */}
+        <div
+          className={
+            "hamb-dropdown-bg " + (displayDropdownNav ? "show-hamb-dd-bg" : "")
+          }
+        />
+        {console.log(displayDropdownNav)}
 
         {/* =============== (MOBILE NAVIGATION ICON) =============== */}
         <div

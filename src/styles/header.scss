@@ -26,6 +26,19 @@
             display: none;
             pointer-events: none;
         }
+        
+        .hamb-dropdown-bg {
+            background-color: black;
+            position: absolute;
+            right: 0px;
+            top: 0;
+            height: 290px;
+            width: 170px;
+            z-index: -1;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 200ms ease-in-out;
+        }
     }
 
     .logo-container {
@@ -58,7 +71,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         .dropdown {
             position: absolute;
             display: flex;
@@ -80,7 +93,7 @@
                 padding: 10px 20px;
                 font-size: 15px;
             }
-            
+
             .dd-each:hover {
                 opacity: 0.75;
             }
@@ -93,14 +106,15 @@
     }
 
     .each-link:hover {
-        opacity: 0.85;
+        opacity: 0.80;
     }
 
     .dropdownable:hover {
         opacity: 1;
     }
 
-    .dropdownable:hover > .dropdown, .dropdown:hover {
+    .dropdownable:hover>.dropdown,
+    .dropdown:hover {
         pointer-events: all;
         opacity: 1;
     }
@@ -108,50 +122,83 @@
 
 @media (max-width: 620px) {
     .header {
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: #000000;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #000000;
 
-    .header-container {
-        .each-link { display: none;}
+        .header-container {
+            .hamburger {
+                display: flex;
+                pointer-events: all;
+                position: absolute;
+                z-index: 1002;
+                top: 40px;
+                right: 45px;
+                cursor: pointer;
+            }
 
-        .hamburger {
-            display: flex;
-            pointer-events: all;
+            .each-link {
+                position: absolute;
+                right: 45px;
+                user-select: none;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 200ms ease-in-out;
+            }
+
+            .el-home {
+                top: 120px;
+            }
+
+            .el-edu {
+                top: 160px;
+            }
+
+            .el-projects {
+                top: 200px;
+            }
+
+            .el-contact {
+                top: 240px;
+            }
+
+            .show-hamb-dd {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            .show-hamb-dd-bg {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+
+        .header-navigation {
             position: absolute;
-            z-index: 1002;
-            top: 40px;
-            right: 45px;
-            cursor: pointer;
+            right: 0px;
+            top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 240px;
+            padding: 35px;
+            padding-top: 70px;
+            background-color: black;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 200ms ease-in-out;
+        }
+
+        .show-navigation {
+            opacity: 1;
+            pointer-events: all;
         }
     }
-    
-    .header-navigation {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 240px;
-        padding: 35px;
-        padding-top: 70px;
-        background-color: black;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 200ms ease-in-out;
-
-        .each-link {
-            margin-top: 25px;
-        }
-    }
-
-    .show-navigation {
-        opacity: 1;
-        pointer-events: all;
-    }
-}
 }
 
 .show-header {
