@@ -10,10 +10,6 @@ import twitter from "../assets/svg_icons/twitter.svg"
 import youtube from "../assets/svg_icons/youtube.svg"
 
 export default function Footer(props) {
-  // useEffect(()=>{
-  //   scrollToTop();
-  // }, [])
-
   const scrollToTop = () => {
     scroller.scrollTo("top", {
       duration: 500,
@@ -34,15 +30,22 @@ export default function Footer(props) {
   return (
     <div className="footer">
       <div className="footer-navigation">
+        {/* =============== HOME =============== */}
         <div className="each-link" onClick={scrollToTop}>
-          {props.isLanding ? <div>HOME</div> : <Link to="/">HOME</Link>}
+          <Link to="/">HOME</Link>
         </div>
-        <div className="each-link" onClick={scrollToAboutUs}>
-          {props.isLanding ? <div>ABOUT US</div> : <Link to="/">ABOUT US</Link>}
+
+        {/* =============== EDUCATION =============== */}
+        <div className="each-link" onClick={scrollToTop}>
+        <Link to="/education/">EDUCATION</Link>
         </div>
+
+        {/* =============== BIOFEEDBACK =============== */}
         <div className="each-link" onClick={scrollToTop}>
           <Link to="/biofeedback/">BIOFEEDBACK</Link>
         </div>
+        
+        {/* =============== SPACE DEVELOPMENT =============== */}
         <div className="each-link" onClick={scrollToTop}>
           <Link to="/space-development/">SPACE DEVELOPMENT</Link>
         </div>
