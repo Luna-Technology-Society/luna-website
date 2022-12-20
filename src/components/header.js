@@ -41,7 +41,7 @@ export default function Header(props) {
   }, [props.isLanding, window])
 
   const updateHeaderStatus = () => {
-    if (!props.isLanding || window.scrollY >= 20) {
+    if (!props.isLanding || window.scrollY > 1) {
       setNavbar(true)
     } else {
       setNavbar(false)
