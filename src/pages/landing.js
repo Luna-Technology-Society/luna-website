@@ -210,6 +210,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
+      {/* =============== OUR PARTNERS =============== */}
       <div className="our-partners-segment">
         <div className="our-partners-header" data-aos="zoom-in">
           OUR PARTNERS
@@ -221,6 +222,22 @@ export default function Landing() {
         >
           <img src={naukowaWioska} alt="Naukowa Wioska" />
         </a>
+      </div>
+      {/* =============== CONTACT US =============== */}
+      <div className="contact-us-segment">
+        <div className="contact-us-header" data-aos="zoom-in">
+          CONTACT US
+        </div>
+        <div className="contact-methods-container">
+          <div className="each-contact-method" data-aos="zoom-in">
+            <div className="each-contact-left">Phone no:</div>
+            <div className="each-contact-right">665 898 811</div>
+          </div>
+          <div className="each-contact-method" data-aos="zoom-in">
+            <div className="each-contact-left">Email:</div>
+            <div className="each-contact-right">info@lunatech.pl</div>
+          </div>
+        </div>
       </div>
       <Footer isLanding />
     </div>

@@ -1,543 +1,591 @@
+// =============== LANDING PAGE ===============
 .landing-page {
-    overflow: hidden;
+  overflow: hidden;
+  position: relative;
+
+  .first-segment {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
     position: relative;
 
-    .first-segment {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        height: 100vh;
-        position: relative;
-
-        .linear-bg-dim {
-            background: rgb(0, 0, 0);
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.3) 90%);
-            pointer-events: none;
-            z-index: 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .arrow-down {
-            position: absolute;
-            bottom: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 10;
-            cursor: pointer;
-        }
-
-        .landing-left {
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-                url("../assets/landing/landing_biofeeback-min.jpg"), no-repeat, center;
-            background-attachment: fixed;
-            background-size: cover;
-
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            text-align: left;
-            padding: 0px;
-            padding-left: 70px;
-            padding-right: 70px;
-
-            .landing-left-heading {
-                font-family: "Rajdhani", sans-serif;
-                color: white;
-                font-weight: 600;
-                font-size: 50px;
-                margin-bottom: 20px;
-            }
-
-            .landing-left-desc {
-                font-size: 20px;
-                color: rgb(231, 231, 231);
-                margin-bottom: 40px;
-            }
-
-            .biofeedback_button {
-                padding: 14px 22px;
-                border: white 3px solid;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                font-family: "Rajdhani", sans-serif;
-                color: white;
-                font-weight: 600;
-                font-size: 30px;
-                user-select: none;
-                cursor: pointer;
-                transition: all 200ms;
-                text-decoration: none;
-            }
-
-            .biofeedback_button:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-        }
-
-
-        .landing-middle {
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-                url("../assets/landing/landing_education_bg.jpg"), no-repeat, center;
-            background-attachment: fixed;
-            background-size: cover;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding-left: 50px;
-            padding-right: 50px;
-
-            .landing-middle-heading {
-                font-family: "Rajdhani", sans-serif;
-                color: white;
-                font-weight: 600;
-                font-size: 50px;
-                margin-bottom: 20px;
-                text-align: center;
-            }
-
-            .landing-middle-desc {
-                font-size: 20px;
-                color: rgb(231, 231, 231);
-                margin-bottom: 40px;
-                text-align: center;
-            }
-
-            .education_button {
-                padding: 14px 22px;
-                border: white 3px solid;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                font-family: "Rajdhani", sans-serif;
-                color: white;
-                font-weight: 600;
-                font-size: 30px;
-                user-select: none;
-                cursor: pointer;
-                transition: all 200ms;
-                text-decoration: none;
-            }
-
-            .spacedev_button:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-        }
-
-        .landing-right {
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-                url("../assets/landing/landing_spacedev-min.jpg"), no-repeat, center;
-            background-attachment: fixed;
-            background-size: cover;
-
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: center;
-            text-align: right;
-            padding-left: 70px;
-            padding-right: 70px;
-
-            .landing-right-heading {
-                font-family: "Rajdhani", sans-serif;
-                color: white;
-                font-weight: 600;
-                font-size: 50px;
-                margin-bottom: 20px;
-            }
-
-            .landing-right-desc {
-                font-size: 20px;
-                color: rgb(231, 231, 231);
-                margin-bottom: 40px;
-            }
-
-            .spacedev_button {
-                padding: 14px 22px;
-                border: white 3px solid;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                font-family: "Rajdhani", sans-serif;
-                color: white;
-                font-weight: 600;
-                font-size: 30px;
-                user-select: none;
-                cursor: pointer;
-                transition: all 200ms;
-                text-decoration: none;
-            }
-
-            .spacedev_button:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-        }
-
-        // When window width drops under 1300px
-        @media (max-width: 1300px) {
-            flex-direction: row;
-
-            .landing-left {
-                min-height: 100%;
-
-                .landing-left-heading {
-                    font-size: 50px;
-                }
-
-                .landing-left-desc {
-                    font-size: 18px;
-                }
-
-                .biofeedback_button {
-                    font-size: 24px;
-                }
-            }
-
-            .landing-middle {
-
-                .luna-logo {
-                    display: flex;
-                }
-
-                .arrow-down {
-                    display: flex;
-                }
-            }
-
-            .landing-right {
-
-                .landing-right-heading {
-                    font-size: 50px;
-                }
-
-                .landing-right-desc {
-                    font-size: 18px;
-                }
-
-                .spacedev_button {
-                    font-size: 24px;
-                }
-            }
-        }
-
-        // When window width drops under 1100px
-        @media (max-width: 1100px) {
-            flex-direction: column-reverse;
-            justify-content: center;
-            height: fit-content;
-            overflow: hidden;
-            padding-top: 100px;
-
-            .arrow-down {
-                display: none;
-            }
-
-            .landing-left {
-                box-sizing: border-box;
-                height: fit-content;
-                background-attachment: scroll;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                padding-left: 0px;
-                padding-right: 0px;
-                padding: 50px;
-
-                .landing-left-heading {
-                    font-size: 50px;
-                }
-
-                .landing-left-desc {
-                    font-size: 18px;
-                }
-
-                .biofeedback_button {
-                    font-size: 24px;
-                }
-            }
-
-            .landing-middle {
-                width: fit-content;
-                min-height: 30px;
-                padding: 50px;
-
-                .luna-logo {
-                    display: none;
-                }
-
-                .arrow-down {
-                    display: none;
-
-                    img {
-                        position: relative;
-                    }
-                }
-            }
-
-            .landing-right {
-                box-sizing: border-box;
-                height: fit-content;
-                width: 100%;
-                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-                    url("../assets/landing/landing_spacedev-min.jpg"), no-repeat, center;
-                background-attachment: scroll;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                padding-left: 0px;
-                padding-right: 0px;
-                padding: 50px;
-
-                .landing-right-heading {
-                    font-size: 50px;
-                }
-
-                .landing-right-desc {
-                    font-size: 18px;
-                }
-
-                .spacedev_button {
-                    font-size: 24px;
-                }
-            }
-        }
+    .linear-bg-dim {
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 0.3) 90%
+      );
+      pointer-events: none;
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
-    .about-us-segment {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 100px;
-        padding-bottom: 100px;
-
-        .about-us-header {
-            font-size: 50px;
-            font-weight: 600;
-            text-align: center;
-            width: 800px;
-            margin-bottom: 30px;
-            padding: 0px;
-        }
-
-        .about-us-desc {
-            font-size: 24px;
-            text-align: center;
-            width: 800px;
-            color: rgb(220, 220, 220);
-            padding: 0px;
-        }
-
-        // When window width drops under 900px
-        @media (max-width: 900px) {
-            overflow: hidden;
-
-            .about-us-header {
-                font-size: 40px;
-                width: fit-content;
-                margin-bottom: 30px;
-                padding-left: 50px;
-                padding-right: 50px;
-            }
-
-            .about-us-desc {
-                font-size: 20px;
-                text-align: center;
-                width: fit-content;
-                color: rgb(220, 220, 220);
-                padding-left: 50px;
-                padding-right: 50px;
-            }
-
-        }
+    .arrow-down {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      cursor: pointer;
     }
 
-    .team-segment {
-        width: 100%;
+    .landing-left {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+        url("../assets/landing/landing_biofeeback-min.jpg"), no-repeat, center;
+      background-attachment: fixed;
+      background-size: cover;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      padding: 0px;
+      padding-left: 70px;
+      padding-right: 70px;
+
+      .landing-left-heading {
+        font-family: "Rajdhani", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      .landing-left-desc {
+        font-size: 20px;
+        color: rgb(231, 231, 231);
+        margin-bottom: 40px;
+      }
+
+      .biofeedback_button {
+        padding: 14px 22px;
+        border: white 3px solid;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../assets/landing/team-background.jpg"),
-            no-repeat, center;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        overflow: hidden;
+        text-align: center;
+        font-family: "Rajdhani", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 30px;
+        user-select: none;
+        cursor: pointer;
+        transition: all 200ms;
+        text-decoration: none;
+      }
 
-        .team-header {
-            width: 100%;
-            font-size: 60px;
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .team-members-container {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            text-align: center;
-            color: rgb(220, 220, 220);
-
-            .heading {
-                font-size: 36px;
-                font-weight: 100;
-                font-family: "Rajdhani", sans-serif;
-                margin-top: 25px;
-            }
-
-            .each-section {
-                display: flex;
-                flex-direction: row;
-                margin-top: 5px;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                justify-content: center;
-                margin-top: 10px;
-
-                .each-member {
-                    width: 240px;
-                    padding-top: 25px;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    padding-bottom: 45px;
-                    box-sizing: border-box;
-
-                    .member-picture {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 100%;
-
-                        img {
-                            width: 60%;
-                            border-radius: 100%;
-                            box-sizing: border-box;
-                            box-shadow: black 2px 1px 5px;
-                        }
-                    }
-
-                    .member-name {
-                        margin-top: 17px;
-                        font-size: 29px;
-                        font-weight: 500;
-                        color: rgb(221, 221, 221);
-                    }
-
-                    .member-role {
-                        margin-top: 12px;
-                        font-size: 16px;
-                        color: rgba(190, 190, 190, 0.9);
-                    }
-                }
-            }
-
-            .others-container {
-                width: 900px;
-
-                .each-member {
-                    width: 300px;
-                }
-            }
-        }
-
-        // When window width drops under 900px
-        @media (max-width: 900px) {
-            background-attachment: scroll;
-
-            .team-header {
-                font-size: 54px;
-            }
-
-            .team-members-container {
-
-                .heading {
-                    margin-top: 20px;
-                }
-
-                .each-section {
-
-                    .each-member {
-                        width: 200px;
-                        padding-top: 25px;
-                        padding-left: 15px;
-                        padding-right: 15px;
-                        padding-bottom: 25px;
-
-                        .member-picture {
-
-                            img {
-                                width: 75%;
-                            }
-                        }
-
-                        .member-name {
-                            margin-top: 14px;
-                            font-size: 24px;
-                        }
-
-                        .member-role {
-                            margin-top: 6px;
-                            font-size: 16px;
-                            color: rgb(190, 190, 190);
-                        }
-                    }
-                }
-
-                .others-container {
-                    width: auto;
-
-                    .each-member {
-                        width: auto;
-                    }
-                }
-            }
-        }
+      .biofeedback_button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
     }
 
-    .our-partners-segment {
+    .landing-middle {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+        url("../assets/landing/landing_education_bg.jpg"), no-repeat, center;
+      background-attachment: fixed;
+      background-size: cover;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      .landing-middle-heading {
+        font-family: "Rajdhani", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .landing-middle-desc {
+        font-size: 20px;
+        color: rgb(231, 231, 231);
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .education_button {
+        padding: 14px 22px;
+        border: white 3px solid;
         display: flex;
         align-items: center;
-        flex-direction: column;
-        padding-top: 130px;
-        padding-bottom: 130px;
+        justify-content: center;
+        text-align: center;
+        font-family: "Rajdhani", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 30px;
+        user-select: none;
+        cursor: pointer;
+        transition: all 200ms;
+        text-decoration: none;
+      }
 
-        .our-partners-header {
-            font-size: 50px;
-            font-weight: 600;
-            text-align: center;
-            width: 100%;
-            margin-bottom: 30px;
-        }
-
-        .each-partner {
-            img {
-                height: 150px;
-            }
-        }
+      .spacedev_button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
     }
+
+    .landing-right {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+        url("../assets/landing/landing_spacedev-min.jpg"), no-repeat, center;
+      background-attachment: fixed;
+      background-size: cover;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: right;
+      padding-left: 70px;
+      padding-right: 70px;
+
+      .landing-right-heading {
+        font-family: "Rajdhani", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+
+      .landing-right-desc {
+        font-size: 20px;
+        color: rgb(231, 231, 231);
+        margin-bottom: 40px;
+      }
+
+      .spacedev_button {
+        padding: 14px 22px;
+        border: white 3px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Rajdhani", sans-serif;
+        color: white;
+        font-weight: 600;
+        font-size: 30px;
+        user-select: none;
+        cursor: pointer;
+        transition: all 200ms;
+        text-decoration: none;
+      }
+
+      .spacedev_button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    // When window width drops under 1300px
+    @media (max-width: 1300px) {
+      flex-direction: row;
+
+      .landing-left {
+        min-height: 100%;
+
+        .landing-left-heading {
+          font-size: 50px;
+        }
+
+        .landing-left-desc {
+          font-size: 18px;
+        }
+
+        .biofeedback_button {
+          font-size: 24px;
+        }
+      }
+
+      .landing-middle {
+        .luna-logo {
+          display: flex;
+        }
+
+        .arrow-down {
+          display: flex;
+        }
+      }
+
+      .landing-right {
+        .landing-right-heading {
+          font-size: 50px;
+        }
+
+        .landing-right-desc {
+          font-size: 18px;
+        }
+
+        .spacedev_button {
+          font-size: 24px;
+        }
+      }
+    }
+
+    // When window width drops under 1100px
+    @media (max-width: 1100px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      height: fit-content;
+      overflow: hidden;
+      padding-top: 100px;
+
+      .arrow-down {
+        display: none;
+      }
+
+      .landing-left {
+        box-sizing: border-box;
+        height: fit-content;
+        background-attachment: scroll;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 50px;
+
+        .landing-left-heading {
+          font-size: 50px;
+        }
+
+        .landing-left-desc {
+          font-size: 18px;
+        }
+
+        .biofeedback_button {
+          font-size: 24px;
+        }
+      }
+
+      .landing-middle {
+        width: fit-content;
+        min-height: 30px;
+        padding: 50px;
+
+        .luna-logo {
+          display: none;
+        }
+
+        .arrow-down {
+          display: none;
+
+          img {
+            position: relative;
+          }
+        }
+      }
+
+      .landing-right {
+        box-sizing: border-box;
+        height: fit-content;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+          url("../assets/landing/landing_spacedev-min.jpg"), no-repeat, center;
+        background-attachment: scroll;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 50px;
+
+        .landing-right-heading {
+          font-size: 50px;
+        }
+
+        .landing-right-desc {
+          font-size: 18px;
+        }
+
+        .spacedev_button {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  // =============== ABOUT US ===============
+  .about-us-segment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .about-us-header {
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center;
+      width: 800px;
+      margin-bottom: 30px;
+      padding: 0px;
+    }
+
+    .about-us-desc {
+      font-size: 24px;
+      text-align: center;
+      width: 800px;
+      color: rgb(220, 220, 220);
+      padding: 0px;
+    }
+
+    // When window width drops under 900px
+    @media (max-width: 900px) {
+      overflow: hidden;
+
+      .about-us-header {
+        font-size: 40px;
+        width: fit-content;
+        margin-bottom: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .about-us-desc {
+        font-size: 20px;
+        text-align: center;
+        width: fit-content;
+        color: rgb(220, 220, 220);
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+  }
+
+  // =============== OUR TEAM ===============
+  .team-segment {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/landing/team-background.jpg"), no-repeat, center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+
+    .team-header {
+      width: 100%;
+      font-size: 60px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .team-members-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      text-align: center;
+      color: rgb(220, 220, 220);
+
+      .heading {
+        font-size: 36px;
+        font-weight: 100;
+        font-family: "Rajdhani", sans-serif;
+        margin-top: 25px;
+      }
+
+      .each-section {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 10px;
+
+        .each-member {
+          width: 240px;
+          padding-top: 25px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 45px;
+          box-sizing: border-box;
+
+          .member-picture {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            img {
+              width: 60%;
+              border-radius: 100%;
+              box-sizing: border-box;
+              box-shadow: black 2px 1px 5px;
+            }
+          }
+
+          .member-name {
+            margin-top: 17px;
+            font-size: 29px;
+            font-weight: 500;
+            color: rgb(221, 221, 221);
+          }
+
+          .member-role {
+            margin-top: 12px;
+            font-size: 16px;
+            color: rgba(190, 190, 190, 0.9);
+          }
+        }
+      }
+
+      .others-container {
+        width: 900px;
+
+        .each-member {
+          width: 300px;
+        }
+      }
+    }
+
+    // When window width drops under 900px
+    @media (max-width: 900px) {
+      background-attachment: scroll;
+
+      .team-header {
+        font-size: 54px;
+      }
+
+      .team-members-container {
+        .heading {
+          margin-top: 20px;
+        }
+
+        .each-section {
+          .each-member {
+            width: 200px;
+            padding-top: 25px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 25px;
+
+            .member-picture {
+              img {
+                width: 75%;
+              }
+            }
+
+            .member-name {
+              margin-top: 14px;
+              font-size: 24px;
+            }
+
+            .member-role {
+              margin-top: 6px;
+              font-size: 16px;
+              color: rgb(190, 190, 190);
+            }
+          }
+        }
+
+        .others-container {
+          width: auto;
+
+          .each-member {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  // =============== OUR PARTNERS ===============
+  .our-partners-segment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    .our-partners-header {
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .each-partner {
+      img {
+        height: 150px;
+      }
+    }
+  }
+
+  // =============== CONTACT US ===============
+  .contact-us-segment {
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+      url("../assets/landing/contact-bg-min.jpg"), no-repeat, center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    .contact-us-header {
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-methods-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 1200px;
+
+      .each-contact-method {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        padding: 12px 0px;
+        width: 100%;
+        margin: 5px 0px;
+
+        .each-contact-left {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .each-contact-right {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
