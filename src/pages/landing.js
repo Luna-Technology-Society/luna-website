@@ -40,6 +40,7 @@ export default function Landing() {
         delay={300}
         releasePointerEvents={600}
       ></PageTransition>
+      {/* =============== LANDING SCREEN =============== */}
       <div className="first-segment" name="top">
         <div className="linear-bg-dim" />
         <img
@@ -142,7 +143,7 @@ export default function Landing() {
           </div>
         </div>
       </div>
-
+      {/* =============== ABOUT US =============== */}
       <div className="about-us-segment" name="about-us">
         <div
           className="about-us-header"
@@ -163,6 +164,7 @@ export default function Landing() {
           and biofeedback.
         </div>
       </div>
+      {/* =============== TEAM S =============== */}
       <div className="team-segment">
         <div className="team-header" data-aos="zoom-in">
           OUR TEAM
