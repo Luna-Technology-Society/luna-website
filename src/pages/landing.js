@@ -231,7 +231,7 @@ export default function Landing() {
         <div className="contact-methods-container">
           <div className="each-contact-method" data-aos="zoom-in">
             <div className="each-contact-left">Phone no:</div>
-            <div className="each-contact-right">665 898 811</div>
+            <div className="each-contact-right">000 000 000</div>
           </div>
           <div className="each-contact-method" data-aos="zoom-in">
             <div className="each-contact-left">Email:</div>
