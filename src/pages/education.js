@@ -107,12 +107,14 @@ export default function Education() {
               data-aos-duration="750"
               data-aos-delay="100"
             >
-              Passion for science and the experience gained during research are
-              the basis of the knowledge we pass on to others. Luna was founded
-              to show the mysterious world of science and encourage you to
-              explore its secrets. Main idea attributed to education Sector of
-              Luna is teaching by conducting workshops, lectures, meetings or
-              educational campaigns.
+              Luna Technology Society is committed to educating and inspiring
+              the next generation of space enthusiasts. Our educational
+              workshops are a key part of this mission, providing valuable
+              information and insights to attendees. In the past, we have
+              covered topics such as the basics of space science and our own
+              achievements as a society. These workshops are an excellent
+              opportunity for anyone interested in technology to learn more
+              about this fascinating field and explore their own potential.
             </div>
           </div>
           <div className="workshops-right">
@@ -154,12 +156,15 @@ export default function Education() {
               data-aos-duration="750"
               data-aos-delay="100"
             >
-              Passion for science and the experience gained during research are
-              the basis of the knowledge we pass on to others. Luna was founded
-              to show the mysterious world of science and encourage you to
-              explore its secrets. Main idea attributed to education Sector of
-              Luna is teaching by conducting workshops, lectures, meetings or
-              educational campaigns.
+              The Luna Technology Society is committed to advancing the
+              understanding of science and technology. As part of our efforts,
+              we run educational campaigns that aim to inspire and engage young
+              people in these fields. These campaigns typically involve creating
+              informative posters, promoting science-related content on social
+              media, and organizing talks about our ongoing projects and the
+              latest scientific developments. Our goal is to encourage the next
+              generation of scientists and technologists and foster a lifelong
+              passion for learning.
             </div>
           </div>
         </div>
