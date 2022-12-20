@@ -420,10 +420,10 @@
                 margin-top: 10px;
 
                 .each-member {
-                    width: 280px;
+                    width: 240px;
                     padding-top: 25px;
-                    padding-left: 20px;
-                    padding-right: 20px;
+                    padding-left: 10px;
+                    padding-right: 10px;
                     padding-bottom: 45px;
                     box-sizing: border-box;
 
@@ -434,7 +434,7 @@
                         width: 100%;
 
                         img {
-                            width: 55%;
+                            width: 60%;
                             border-radius: 100%;
                             box-sizing: border-box;
                             box-shadow: black 2px 1px 5px;
@@ -442,14 +442,14 @@
                     }
 
                     .member-name {
-                        margin-top: 16px;
-                        font-size: 27px;
+                        margin-top: 17px;
+                        font-size: 29px;
                         font-weight: 500;
                         color: rgb(221, 221, 221);
                     }
 
                     .member-role {
-                        margin-top: 13px;
+                        margin-top: 12px;
                         font-size: 16px;
                         color: rgba(190, 190, 190, 0.9);
                     }

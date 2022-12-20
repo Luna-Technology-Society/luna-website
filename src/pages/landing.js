@@ -9,29 +9,32 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import PageTransition from "../components/page-transition"
 
-// images
-import tomoPic from "../assets/profile_pics/tomo.png"
-import ignacyPic from "../assets/profile_pics/ignacy.png"
-import olekPic from "../assets/profile_pics/olek.png"
-import konradPic from "../assets/profile_pics/konrad.png"
+//images
 import naukowaWioska from "../assets/landing/naukowawioska.png"
 import arrowDown from "../assets/svg_icons/arrow-down.svg"
 
 // stylesheet
 import "../styles/landing.scss"
 
-const scrollToAboutUs = () => {
-  scroller.scrollTo("about-us", {
-    duration: 750,
-    delay: 0,
-    smooth: "easeInOutQuart",
-  })
-}
+// data
+import { managmentMemebers, otherMembers } from "../static_data/members"
 
 export default function Landing() {
   useEffect(() => {
     Aos.init({ duration: 500 })
   })
+
+  /**
+   * When triggered will animate the screen to glide to the about-us section.
+   */
+  const scrollToAboutUs = () => {
+    scroller.scrollTo("about-us", {
+      duration: 750,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    })
+  }
+
   return (
     <div className="landing-page">
       <Header isLanding />
@@ -164,7 +167,7 @@ export default function Landing() {
           and biofeedback.
         </div>
       </div>
-      {/* =============== TEAM S =============== */}
+      {/* =============== TEAMS =============== */}
       <div className="team-segment">
         <div className="team-header" data-aos="zoom-in">
           OUR TEAM
@@ -174,104 +177,36 @@ export default function Landing() {
             MANAGEMENT
           </div>
           <div className="each-section managment-container">
-            <div className="each-member" data-aos="zoom-in" data-aos-delay="0">
-              <div className="member-picture">
-                <img src={tomoPic} alt="tomo profile pic"></img>
+            {managmentMemebers.map((member, index) => (
+              <div
+                className="each-member"
+                data-aos="zoom-in"
+                data-aos-delay={50 * index}
+                key={index}
+              >
+                <div className="member-picture">
+                  <img src={member.image} alt="profile picture"></img>
+                </div>
+                <div className="member-name"> {member.name}</div>
+                <div className="member-role">{member.role}</div>
               </div>
-              <div className="member-name">Tomasz Mróz</div>
-              <div className="member-role">
-                CEO | Space Development Supervisor
-              </div>
-            </div>
-            <div
-              className="each-member"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div className="member-picture">
-                <img src={ignacyPic} alt="tomo profile pic"></img>
-              </div>
-              <div className="member-name">Ignacy Strojny</div>
-              <div className="member-role">CFO | Space Development</div>
-            </div>
-            <div
-              className="each-member"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <div className="member-picture">
-                <img src={konradPic} alt="tomo profile pic"></img>
-              </div>
-              <div className="member-name">Konrad Mędoń</div>
-              <div className="member-role">COO | Space Development</div>
-            </div>
-            <div
-              className="each-member"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <div className="member-picture">
-                <img src={olekPic} alt="tomo profile pic"></img>
-              </div>
-              <div className="member-name">Aleksander Pająk</div>
-              <div className="member-role">MEO | Space Development</div>
-            </div>
+            ))}
           </div>
           <div className="heading" data-aos="zoom-in">
             OTHER MEMBERS
           </div>
           <div className="each-section others-container">
-            <div className="each-member" data-aos="zoom-in" data-aos-delay="0">
-              {/* <div className="member-picture">
-                <img src={mateuszPic} alt="tomo profile pic"></img>
-              </div> */}
-              <div className="member-name">Mateusz Szewczyk</div>
-              <div className="member-role">BioFeedback Supervisor</div>
-            </div>
-            <div
-              className="each-member"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              {/* <div className="member-picture">
-                <img src={oskarPic} alt="tomo profile pic"></img>
-              </div> */}
-              <div className="member-name">Oskar Mróz</div>
-              <div className="member-role">Web Developer | IT</div>
-            </div>
-            <div
-              className="each-member"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              {/* <div className="member-picture">
-                <img src={oskarPic} alt="tomo profile pic"></img>
-              </div> */}
-              <div className="member-name">Bartłomiej Mróz</div>
-              <div className="member-role">Electronics | IT</div>
-            </div>
-            <div
-              className="each-member"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              {/* <div className="member-picture">
-                <img src={oskarPic} alt="tomo profile pic"></img>
-              </div> */}
-              <div className="member-name">Wojciech Damian</div>
-              <div className="member-role">BioFeedback</div>
-            </div>
-            <div
-              className="each-member"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              {/* <div className="member-picture">
-                <img src={oskarPic} alt="tomo profile pic"></img>
-              </div> */}
-              <div className="member-name">Zuzanna Mieczkowska</div>
-              <div className="member-role">Social MediaI | PR</div>
-            </div>
+            {otherMembers.map((member, index) => (
+              <div
+                className="each-member"
+                data-aos="zoom-in"
+                data-aos-delay={50 * index}
+                key={index}
+              >
+                <div className="member-name">{member.name}</div>
+                <div className="member-role">{member.role}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
