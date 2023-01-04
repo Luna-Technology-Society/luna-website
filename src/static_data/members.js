@@ -3,7 +3,7 @@ import tomoPic from "../assets/profile_pics/tomo.png"
 import ignacyPic from "../assets/profile_pics/ignacy.png"
 import olekPic from "../assets/profile_pics/olek.png"
 import konradPic from "../assets/profile_pics/konrad.png"
-import oskarPic from "../assets/profile_pics/oskar.png"
+import noPic from "../assets/profile_pics/nopic.png"
 
 export const managmentMemebers = [
   {
@@ -29,7 +29,7 @@ export const managmentMemebers = [
   {
     name: "Urszula Potoniec-Mędoń",
     role: "EDU Supervisor",
-    image: oskarPic,
+    image: noPic,
   },
 ]
 
