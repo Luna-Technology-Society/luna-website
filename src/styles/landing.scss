@@ -587,5 +587,11 @@
         }
       }
     }
+
+    @media (max-width: 1500px) {
+      .contact-methods-container {
+        width: 80%;
+      }
+    }
   }
 }
