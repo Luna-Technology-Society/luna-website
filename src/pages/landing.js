@@ -46,16 +46,23 @@ export default function Landing() {
       {/* =============== LANDING SCREEN =============== */}
       <div className="first-segment" name="top">
         <div className="linear-bg-dim" />
-        <img
-          src={arrowDown}
-          alt="v"
-          className="arrow-down"
-          data-aos="fade-down"
-          data-aos-delay="1000"
-          data-aos-duration="750"
-          data-aos-anchor-placement="bottom-bottom"
+        <div
+          role="button"
+          tabIndex={0}
           onClick={scrollToAboutUs}
-        />
+          onKeyDown={scrollToAboutUs}
+        >
+          <img
+            src={arrowDown}
+            alt="v"
+            className="arrow-down"
+            data-aos="fade-down"
+            data-aos-delay="1000"
+            data-aos-duration="750"
+            data-aos-anchor-placement="bottom-bottom"
+          />
+        </div>
+
         <div className="landing-left">
           <div
             className="landing-left-heading"
@@ -185,7 +192,7 @@ export default function Landing() {
                 key={index}
               >
                 <div className="member-picture">
-                  <img src={member.image} alt="profile picture"></img>
+                  <img src={member.image} alt={member.name}></img>
                 </div>
                 <div className="member-name"> {member.name}</div>
                 <div className="member-role">{member.role}</div>
@@ -224,7 +231,7 @@ export default function Landing() {
         </a>
       </div>
       {/* =============== CONTACT US =============== */}
-      <div className="contact-us-segment">
+      <div className="contact-us-segment" name="contact-us">
         <div className="contact-us-header" data-aos="zoom-in">
           CONTACT US
         </div>

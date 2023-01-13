@@ -58,7 +58,13 @@ export default function Education() {
             data-aos-delay="700"
             data-aos-duration="750"
           >
-            <div className="education-button" onClick={scrollToAboutProject}>
+            <div
+              className="education-button"
+              onClick={scrollToAboutProject}
+              onKeyDown={scrollToAboutProject}
+              role="button"
+              tabIndex={0}
+            >
               READ MORE
             </div>
           </div>

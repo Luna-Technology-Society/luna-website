@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React, { useCallback, useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { scroller } from "react-scroll"
-import { exists, window } from "browser-monads"
+// import { exists, window } from "browser-monads"
 
 import main_logo from "../assets/navigation/luna_tech_soc.png"
 import logo_biofeedback from "../assets/navigation/logo-biofeedback.png"
@@ -13,6 +13,15 @@ export default function Header(props) {
   const [navbar, setNavbar] = useState(false)
   const [logo, setLogo] = useState(main_logo)
   const [displayDropdownNav, setDisplayDropdownNav] = useState(false)
+
+  const updateHeaderStatus = useCallback(() => {
+    if (!props.isLanding || window.scrollY > 1) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+      setDisplayDropdownNav(false)
+    }
+  }, [props.isLanding])
 
   useEffect(() => {
     if (!props.isLanding) {
@@ -27,27 +36,24 @@ export default function Header(props) {
     if (props.isEducation) {
       setLogo(main_logo)
     }
-  }, [])
+  }, [props])
 
   useEffect(() => {
-    if (props.isLanding && exists(window)) {
-      window.addEventListener("scroll", updateHeaderStatus)
+    if (props.isLanding && window) {
+      window.addEventListener(
+        "scroll",
+        updateHeaderStatus ? updateHeaderStatus : null
+      )
     }
     return () => {
-      if (props.isLanding && exists(window)) {
-        window.removeEventListener("scroll", updateHeaderStatus)
+      if (props.isLanding && window) {
+        window.removeEventListener(
+          "scroll",
+          updateHeaderStatus ? updateHeaderStatus : null
+        )
       }
     }
-  }, [props.isLanding, window])
-
-  const updateHeaderStatus = () => {
-    if (!props.isLanding || window.scrollY > 1) {
-      setNavbar(true)
-    } else {
-      setNavbar(false)
-      setDisplayDropdownNav(false)
-    }
-  }
+  }, [props.isLanding, updateHeaderStatus])
 
   const scrollToTop = () => {
     updateHeaderStatus()
@@ -59,11 +65,11 @@ export default function Header(props) {
     })
   }
 
-  const scrollToAboutUs = () => {
+  const scrollToContactUs = () => {
     updateHeaderStatus()
     setDisplayDropdownNav(false)
     setTimeout(() => {
-      scroller.scrollTo("about-us", {
+      scroller.scrollTo("contact-us", {
         duration: 500,
         delay: 0,
         smooth: "easeInOutQuart",
@@ -80,6 +86,9 @@ export default function Header(props) {
             "each-link el-home " + (displayDropdownNav ? "show-hamb-dd" : "")
           }
           onClick={scrollToTop}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
         >
           {props.isLanding ? <div>HOME</div> : <Link to="/">HOME</Link>}
         </div>
@@ -90,6 +99,9 @@ export default function Header(props) {
             "each-link el-edu " + (displayDropdownNav ? "show-hamb-dd" : "")
           }
           onClick={scrollToTop}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
         >
           {props.isEducation ? (
             <div>EDUCATION</div>
@@ -102,6 +114,9 @@ export default function Header(props) {
         <div
           className="logo-container"
           onClick={props.isLanding ? scrollToTop : () => {}}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
         >
           <Link to="/">
             <img src={logo} alt="logo"></img>
@@ -117,14 +132,26 @@ export default function Header(props) {
         >
           <div>PROJECTS</div>
           <div className="dropdown">
-            <div className="dd-each" onClick={scrollToTop}>
+            <div
+              className="dd-each"
+              onClick={scrollToTop}
+              onKeyDown={scrollToTop}
+              role="button"
+              tabIndex={0}
+            >
               {props.isBiofeedback ? (
                 <div>BIOFEEDBACK</div>
               ) : (
                 <Link to="/biofeedback/">BIOFEEDBACK</Link>
               )}
             </div>
-            <div className="dd-each" onClick={scrollToTop}>
+            <div
+              className="dd-each"
+              onClick={scrollToTop}
+              onKeyDown={scrollToTop}
+              role="button"
+              tabIndex={0}
+            >
               {props.isSpaceDev ? (
                 <div>SPACE DEVELOPMENT</div>
               ) : (
@@ -140,8 +167,22 @@ export default function Header(props) {
             "each-link el-contact " + (displayDropdownNav ? "show-hamb-dd" : "")
           }
           onClick={scrollToTop}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
         >
-          {props.isLanding ? <div>CONTACT</div> : <Link to="/">CONTACT</Link>}
+          {props.isLanding ? (
+            <div
+              onClick={scrollToContactUs}
+              onKeyDown={scrollToContactUs}
+              role="button"
+              tabIndex={0}
+            >
+              CONTACT
+            </div>
+          ) : (
+            <Link to="/">CONTACT</Link>
+          )}
         </div>
 
         {/* =============== CONTACT =============== */}
@@ -160,6 +201,13 @@ export default function Header(props) {
               ? setDisplayDropdownNav(false)
               : setDisplayDropdownNav(true)
           }}
+          onKeyDown={() => {
+            displayDropdownNav
+              ? setDisplayDropdownNav(false)
+              : setDisplayDropdownNav(true)
+          }}
+          role="button"
+          tabIndex={0}
         >
           <svg
             width="28"

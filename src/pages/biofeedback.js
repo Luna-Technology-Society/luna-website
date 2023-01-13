@@ -63,7 +63,13 @@ export default function MisingPage() {
             data-aos-delay="700"
             data-aos-duration="750"
           >
-            <div className="biofeedback-button" onClick={scrollToAboutProject}>
+            <div
+              role="button"
+              tabIndex={0}
+              className="biofeedback-button"
+              onClick={scrollToAboutProject}
+              onKeyDown={scrollToAboutProject}
+            >
               READ MORE
             </div>
           </div>
@@ -72,29 +78,40 @@ export default function MisingPage() {
       <div className="about-project-segment">
         <div className="about-project-container">
           <div className="about-project-left">
-            <img src={brain} alt="asronout"
-            data-aos="fade-right"
-            data-aos-duration="750"></img>
+            <img
+              src={brain}
+              alt="asronout"
+              data-aos="fade-right"
+              data-aos-duration="750"
+            ></img>
           </div>
           <div className="about-project-right">
-            <div className="about-project-header"
-            data-aos="fade-left"
-            data-aos-duration="750"
-            data-aos-delay="150">ABOUT THE PROJECT</div>
-            <div className="about-project-desc"
-            data-aos="fade-left"
-            data-aos-duration="750"
-            data-aos-delay="250">
+            <div
+              className="about-project-header"
+              data-aos="fade-left"
+              data-aos-duration="750"
+              data-aos-delay="150"
+            >
+              ABOUT THE PROJECT
+            </div>
+            <div
+              className="about-project-desc"
+              data-aos="fade-left"
+              data-aos-duration="750"
+              data-aos-delay="250"
+            >
               Our objective is to design compact devices capable of collecting
               definitive signals from human organisms and then interpreting the
               data for a large range of applications. This project is very
               versatile, so we will be able to work on devices that can be used
               for entertainment and even cerebral development.
             </div>
-            <div className="about-project-follow-us"
-            data-aos="fade-left"
-            data-aos-duration="750"
-            data-aos-delay="350">
+            <div
+              className="about-project-follow-us"
+              data-aos="fade-left"
+              data-aos-duration="750"
+              data-aos-delay="350"
+            >
               <span>Follow us: </span>{" "}
               <div className="media-icons">
                 <a
@@ -131,8 +148,9 @@ export default function MisingPage() {
         </div>
       </div>
       <div className="next-segment">
-        <div className="comming-soon"
-        data-aos="zoom-in">MORE INFO COMMING SOON...</div>
+        <div className="comming-soon" data-aos="zoom-in">
+          MORE INFO COMMING SOON...
+        </div>
       </div>
       <Footer isBiofeedback />
     </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { scroller } from "react-scroll"
 import { Link } from "gatsby"
 
@@ -17,36 +17,63 @@ export default function Footer(props) {
       smooth: "easeInOutQuart",
     })
   }
-  const scrollToAboutUs = () => {
-    setTimeout(() => {
-      scroller.scrollTo("about-us", {
-        duration: 500,
-        delay: 0,
-        smooth: "easeInOutQuart",
-      })
-    }, 100)
-  }
+  /**
+   * Comented out for now. The footer will likely be changed to acommodate the scrollTo function.
+   */
+  // const scrollToAboutUs = () => {
+  //   setTimeout(() => {
+  //     scroller.scrollTo("about-us", {
+  //       duration: 500,
+  //       delay: 0,
+  //       smooth: "easeInOutQuart",
+  //     })
+  //   }, 100)
+  // }
 
   return (
     <div className="footer">
       <div className="footer-navigation">
         {/* =============== HOME =============== */}
-        <div className="each-link" onClick={scrollToTop}>
+        <div
+          className="each-link"
+          onClick={scrollToTop}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
+        >
           <Link to="/">HOME</Link>
         </div>
 
         {/* =============== EDUCATION =============== */}
-        <div className="each-link" onClick={scrollToTop}>
-        <Link to="/education/">EDUCATION</Link>
+        <div
+          className="each-link"
+          onClick={scrollToTop}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
+        >
+          <Link to="/education/">EDUCATION</Link>
         </div>
 
         {/* =============== BIOFEEDBACK =============== */}
-        <div className="each-link" onClick={scrollToTop}>
+        <div
+          className="each-link"
+          onClick={scrollToTop}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
+        >
           <Link to="/biofeedback/">BIOFEEDBACK</Link>
         </div>
-        
+
         {/* =============== SPACE DEVELOPMENT =============== */}
-        <div className="each-link" onClick={scrollToTop}>
+        <div
+          className="each-link"
+          onClick={scrollToTop}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
+        >
           <Link to="/space-development/">SPACE DEVELOPMENT</Link>
         </div>
       </div>
@@ -81,10 +108,11 @@ export default function Footer(props) {
         </a>
       </div>
       <div className="footer-copyright">
-        Copyright ©2022 Stowarzyszenie Luna Technology Society  -  info@lunatech.pl
+        Copyright ©2022 Stowarzyszenie Luna Technology Society -
+        info@lunatech.pl
       </div>
-      <div className="footer-copyright" style={{fontWeight: "bold"}}>
-        KRS: 0000546604  NIP: 7343530379  REGON: 360982412
+      <div className="footer-copyright" style={{ fontWeight: "bold" }}>
+        KRS: 0000546604 NIP: 7343530379 REGON: 360982412
       </div>
     </div>
   )

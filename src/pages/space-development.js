@@ -64,11 +64,23 @@ export default function SpaceDevelopment() {
             data-aos-delay="700"
             data-aos-duration="750"
           >
-            <div className="space-dev-button" onClick={scrollToAboutProject}>
+            <div
+              role="button"
+              tabIndex={0}
+              className="space-dev-button"
+              onClick={scrollToAboutProject}
+              onKeyDown={scrollToAboutProject}
+            >
               READ MORE
             </div>
           </div>
-          <video className="videoTag" autoPlay loop muted style={{zIndex: -1}}>
+          <video
+            className="videoTag"
+            autoPlay
+            loop
+            muted
+            style={{ zIndex: -1 }}
+          >
             <source src={sample} type="video/webm" />
           </video>
         </div>

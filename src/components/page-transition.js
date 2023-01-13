@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-import Header from "../components/header"
 import { useSpring, animated } from "react-spring"
 
 export default function PageTransition(props) {
@@ -7,7 +6,7 @@ export default function PageTransition(props) {
     setTimeout(() => {
       document.getElementById("page-dim").style.pointerEvents = "none"
     }, props.releasePointerEvents)
-  }, [])
+  }, [props.releasePointerEvents])
 
   const dimAnimationProps = useSpring({
     config: {
@@ -15,8 +14,8 @@ export default function PageTransition(props) {
     },
     delay: props.delay,
     opacity: "0",
-    from: { opacity: "1"}
-  });
+    from: { opacity: "1" },
+  })
 
   return (
     <animated.div
