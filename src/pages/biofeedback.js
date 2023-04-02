@@ -29,7 +29,7 @@ const scrollToAboutProject = () => {
 export default function MisingPage() {
   useEffect(() => {
     Aos.init({ duration: 500 })
-  })
+  }, [])
   return (
     <div className="biofeedback-page">
       <PageTransition
