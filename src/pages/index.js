@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet"
 // components
 import Landing from "./landing"
 import SpaceDevelopment from "./space-development"
-import BioFeedback from "./biofeedback"
+import JoinUs from "./joinus"
 import Education from "./education"
 
 // stylesheet
@@ -21,7 +21,7 @@ export default function Home() {
       <MyRouter>
         <Landing path="/" />
         <SpaceDevelopment path="/space-development" />
-        <BioFeedback path="/biofeedback" />
+        <JoinUs path="/joinus" />
         <Education path="/education" />
       </MyRouter>
     </Fragment>

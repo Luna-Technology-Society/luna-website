@@ -70,8 +70,8 @@ export default function Landing() {
             data-aos-delay="0"
             data-aos-duration="750"
           >
-            LUNA <br />
-            BIOFEEDBACK
+            <br/>
+            JOIN US
           </div>
           <div
             className="landing-left-desc"
@@ -79,15 +79,16 @@ export default function Landing() {
             data-aos-delay="100"
             data-aos-duration="750"
           >
-            Luna Biofeedback was designed to create ground-breaking technology
-            that will aid in making your daily life slightly more effortless.
+            Luna is currently looking for both temporary volunteers and long-term members. Check out the join us page for more information.
+            <br/>
+            <br/>
           </div>
           <div
             data-aos="fade-right"
             data-aos-delay="200"
             data-aos-duration="750"
           >
-            <Link to="/biofeedback/" className="biofeedback_button">
+            <Link to="/joinus/" className="biofeedback_button">
               GO TO PAGE
             </Link>
           </div>

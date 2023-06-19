@@ -1,0 +1,253 @@
+.joinus-page {
+  .first-segment {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+      url("../assets/landing/landing_joinus.jpg"), no-repeat, center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .first-segment-container {
+      width: 1000px;
+      font-family: "Rajdhani", sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      .joinus-header {
+        font-size: 90px;
+        font-weight: 500;
+      }
+
+      .joinus-desc {
+        font-size: 30px;
+        margin-top: 40px;
+        width: 700px;
+        font-weight: 300;
+      }
+
+      .joinus-button {
+        margin-top: 40px;
+        padding: 12px;
+        font-size: 30px;
+        border: 2px solid white;
+        cursor: pointer;
+        user-select: none;
+        transition: all 100ms ease-in-out;
+      }
+
+      .joinus-button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .first-segment-container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .joinus-header {
+          font-size: 70px;
+        }
+
+        .joinus-desc {
+          font-size: 20px;
+          margin-top: 40px;
+          width: 600px;
+        }
+
+        .joinus-button {
+          font-size: 24px;
+        }
+      }
+    }
+
+    @media (max-width: 900px) {
+      .first-segment-container {
+        width: 100%;
+
+        .joinus-header {
+          font-size: 55px;
+        }
+
+        .joinus-desc {
+          font-size: 18px;
+          margin-top: 40px;
+          width: 100%;
+        }
+
+        .joinus-button {
+          font-size: 20px;
+        }
+      }
+    }
+
+    @media (max-width: 430px) {
+      overflow: hidden;
+
+      .first-segment-container {
+        width: 100%;
+
+        .joinus-header {
+          font-size: 40px;
+        }
+
+        .joinus-desc {
+          font-size: 18px;
+          margin-top: 40px;
+          width: 100%;
+        }
+
+        .joinus-button {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  // EACH SEGMENT AFTER THE HERO
+
+  .project-segment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    .project-segment-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 1000px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .project-segment-left,
+    .project-segment-right {
+      .project-segment-header {
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .project-segment-desc {
+        font-size: 20px;
+        font-weight: 300;
+        color: rgb(202, 202, 202);
+        margin-bottom: 20px;
+      }
+
+      .project-segment-follow-us {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+
+        span {
+          font-size: 20px;
+          font-weight: 700;
+          color: rgb(216, 216, 216);
+          flex: 1;
+        }
+
+        .media-icons {
+          .each-icon {
+            height: 30px;
+            margin-left: 14px;
+            cursor: pointer;
+          }
+
+          .each-icon:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+
+      .project-image {
+        width: 400px;
+        padding-bottom: 60px;
+        margin-top: 0px;
+      }
+    }
+
+    .project-segment-left {
+      margin-right: 40px;
+      position: relative;
+      opacity: 1;
+    }
+
+    .project-segment-right {
+      text-align: right;
+    }
+
+    @media (max-width: 1100px) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      .project-segment-container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .project-segment-left {
+        position: absolute;
+        opacity: 0.15;
+      }
+
+      .project-segment-left,
+      .project-segment-right {
+        .project-image {
+          padding-bottom: 0px;
+          margin-top: 50px;
+        }
+      }
+    }
+
+    @media (max-width: 600px) {
+      overflow: hidden;
+
+      .project-segment-container {
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+      }
+
+      .project-segment-right,
+      .project-segment-left {
+        .project-segment-header {
+          font-size: 36px;
+        }
+
+        .project-segment-desc {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .next-segment {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    .comming-soon {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+}

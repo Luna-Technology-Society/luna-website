@@ -4,7 +4,6 @@ import { scroller } from "react-scroll"
 // import { exists, window } from "browser-monads"
 
 import main_logo from "../assets/navigation/luna_tech_soc.png"
-import logo_biofeedback from "../assets/navigation/logo-biofeedback.png"
 import logo_spacedev from "../assets/navigation/logo-spacedev.png"
 
 import "../styles/header.scss"
@@ -28,7 +27,7 @@ export default function Header(props) {
       setNavbar(true)
     }
     if (props.isBiofeedback) {
-      setLogo(logo_biofeedback)
+      setLogo(main_logo)
     }
     if (props.isSpaceDev) {
       setLogo(logo_spacedev)
@@ -93,36 +92,6 @@ export default function Header(props) {
           {props.isLanding ? <div>HOME</div> : <Link to="/">HOME</Link>}
         </div>
 
-        {/* =============== EDUCATION =============== */}
-        <div
-          className={
-            "each-link el-edu " + (displayDropdownNav ? "show-hamb-dd" : "")
-          }
-          onClick={scrollToTop}
-          onKeyDown={scrollToTop}
-          role="button"
-          tabIndex={0}
-        >
-          {props.isEducation ? (
-            <div>EDUCATION</div>
-          ) : (
-            <Link to="/education/">EDUCATION</Link>
-          )}
-        </div>
-
-        {/* =============== LOGO =============== */}
-        <div
-          className="logo-container"
-          onClick={props.isLanding ? scrollToTop : () => {}}
-          onKeyDown={scrollToTop}
-          role="button"
-          tabIndex={0}
-        >
-          <Link to="/">
-            <img src={logo} alt="logo"></img>
-          </Link>
-        </div>
-
         {/* =============== PROJECTS =============== */}
         <div
           className={
@@ -140,9 +109,9 @@ export default function Header(props) {
               tabIndex={0}
             >
               {props.isBiofeedback ? (
-                <div>BIOFEEDBACK</div>
+                <div>EDUCATION</div>
               ) : (
-                <Link to="/biofeedback/">BIOFEEDBACK</Link>
+                <Link to="/education/">EDUCATION</Link>
               )}
             </div>
             <div
@@ -159,6 +128,38 @@ export default function Header(props) {
               )}
             </div>
           </div>
+        </div>
+
+        
+
+        {/* =============== LOGO =============== */}
+        <div
+          className="logo-container"
+          onClick={props.isLanding ? scrollToTop : () => {}}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
+        >
+          <Link to="/">
+            <img src={logo} alt="logo"></img>
+          </Link>
+        </div>
+
+        {/* =============== EDUCATION =============== */}
+        <div
+          className={
+            "each-link el-edu " + (displayDropdownNav ? "show-hamb-dd" : "")
+          }
+          onClick={scrollToTop}
+          onKeyDown={scrollToTop}
+          role="button"
+          tabIndex={0}
+        >
+          {props.isEducation ? (
+            <div>JOIN US</div>
+          ) : (
+            <Link to="/joinus/">JOIN US</Link>
+          )}
         </div>
 
         {/* =============== CONTACT =============== */}
@@ -185,13 +186,12 @@ export default function Header(props) {
           )}
         </div>
 
-        {/* =============== CONTACT =============== */}
+        {/* =============== DROPDOWN BG =============== */}
         <div
           className={
             "hamb-dropdown-bg " + (displayDropdownNav ? "show-hamb-dd-bg" : "")
           }
         />
-        {console.log(displayDropdownNav)}
 
         {/* =============== (MOBILE NAVIGATION ICON) =============== */}
         <div

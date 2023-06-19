@@ -27,6 +27,7 @@ export default function SpaceDevelopment() {
       duration: 500,
       delay: 0,
       smooth: "easeInOutQuart",
+      offset: -99,
     })
   }
   useEffect(() => {
