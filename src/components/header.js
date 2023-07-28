@@ -64,7 +64,7 @@ export default function Header(props) {
     })
   }
 
-  const scrollToContactUs = () => {
+  const scrollToContactUs = async () => {
     updateHeaderStatus()
     setDisplayDropdownNav(false)
     setTimeout(() => {
@@ -182,7 +182,7 @@ export default function Header(props) {
               CONTACT
             </div>
           ) : (
-            <Link to="/">CONTACT</Link>
+            <Link to="/" onClick={scrollToContactUs}>CONTACT</Link>
           )}
         </div>
 

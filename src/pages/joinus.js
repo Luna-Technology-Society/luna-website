@@ -10,6 +10,8 @@ import Header from "../components/header"
 
 // images
 import formsIcon from "../assets/svg_icons/forms-round.svg"
+import grupaImg from "../assets/joinus/grupa.jpg"
+import artdisplayImg from "../assets/joinus/artdisplay.jpg"
 
 // stylesheet
 import "../styles/joinus.scss"
@@ -77,13 +79,13 @@ export default function JoinUs() {
       <section className="project-segment" id="about-joinus-segment">
         <div className="project-segment-container">
           <div className="project-segment-left">
-            {/* <img
-              src={brain}
+            <img
+              src={grupaImg}
               className="project-image"
-              alt="asronout"
+              alt="kids"
               data-aos="fade-right"
               data-aos-duration="750"
-            /> */}
+            />
           </div>
 
           <div className="project-segment-right">
@@ -101,7 +103,7 @@ export default function JoinUs() {
               data-aos-duration="750"
               data-aos-delay="250"
             >
-              LUNA Members are active members in events ran by the society.
+              LUNA members take part in most events ran by the society. As a LUNA member you will be given a role and you will be expected to meet your responsibilities. Our roles vary from social media managment to engineering and research. LUNA Members are a close community of down-to-earth individuals. Please apply in the form below to join our community.
             </p>
             <div
               className="project-segment-follow-us"
@@ -129,7 +131,7 @@ export default function JoinUs() {
       </section>
 
       {/* ==================== SECOND SEGMENT ==================== */}
-      <section className="project-segment">
+      <section className="project-segment volunteer-segment">
         <div className="project-segment-container">
           <div className="project-segment-left">
             <h2
@@ -146,7 +148,7 @@ export default function JoinUs() {
               data-aos-duration="750"
               data-aos-delay="250"
             >
-              LUNA Members are active members in events ran by the society.
+              LUNA volunteers are temporary members who are help out during some events and are not expected to participate in the long term. By becoming a volunteer you can learn a lot about space science and event organization. If you would like to help us out but you don't want to commit then becoming a LUNA volunteer is your best option. Fill out the form below and come see us in-person!
             </p>
             <div
               className="project-segment-follow-us"
@@ -172,13 +174,13 @@ export default function JoinUs() {
           </div>
 
           <div className="project-segment-right">
-            {/* <img
-              src={brain}
+            <img
+              src={artdisplayImg}
               className="project-image"
               alt="asronout"
               data-aos="fade-right"
               data-aos-duration="750"
-            /> */}
+            />
           </div>
         </div>
       </section>

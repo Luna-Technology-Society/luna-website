@@ -32,6 +32,7 @@ export default function Landing() {
       duration: 750,
       delay: 0,
       smooth: "easeInOutQuart",
+      offset: -99,
     })
   }
 

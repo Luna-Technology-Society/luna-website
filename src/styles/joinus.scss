@@ -1,7 +1,7 @@
 .joinus-page {
   .first-segment {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-      url("../assets/landing/landing_joinus.jpg"), no-repeat, center;
+      url("../assets/joinus/joinus_bg.jpg"), no-repeat, center;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -125,7 +125,7 @@
     .project-segment-container {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       width: 1000px;
       padding-left: 0px;
       padding-right: 0px;
@@ -156,7 +156,6 @@
           font-size: 20px;
           font-weight: 700;
           color: rgb(216, 216, 216);
-          flex: 1;
         }
 
         .media-icons {
@@ -174,8 +173,10 @@
 
       .project-image {
         width: 400px;
-        padding-bottom: 60px;
+        margin-bottom: 10px;
         margin-top: 0px;
+        border-radius: 20px;
+        border: white 3px solid;
       }
     }
 
@@ -183,6 +184,10 @@
       margin-right: 40px;
       position: relative;
       opacity: 1;
+
+      .project-segment-follow-us {
+        justify-content: flex-start;
+      }
     }
 
     .project-segment-right {
@@ -235,19 +240,10 @@
     }
   }
 
-  .next-segment {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
+  .volunteer-segment {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/joinus/bottom_bg.jpg"), no-repeat, center;
+    background-attachment: fixed;
+    background-size: cover;
 
-    .comming-soon {
-      font-size: 40px;
-      text-align: center;
-    }
   }
 }
