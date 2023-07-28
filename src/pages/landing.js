@@ -226,7 +226,7 @@ export default function Landing() {
         <a
           className="each-partner"
           data-aos="zoom-in"
-          href="http://scienceville.pl/"
+          href="https://naukowawioska.pl/"
         >
           <img src={naukowaWioska} alt="Naukowa Wioska" />
         </a>
