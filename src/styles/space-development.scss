@@ -105,6 +105,8 @@
         // When window width drops under 400px
         @media (max-width: 400px) {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../assets/space_dev/space-dev-bg-min.jpg"), no-repeat, center;
+            justify-content: flex-start;
+            padding-top: 140px;
 
             .first-segment-container {
                 .space-dev-header {
@@ -115,7 +117,7 @@
 
                 .space-dev-desc {
                     font-size: 18px;
-                    margin-top: 40px;
+                    margin-top: 30px;
                     width: 100%;
                     font-weight: 300;
                     z-index: 2;

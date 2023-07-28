@@ -91,6 +91,8 @@
 
     @media (max-width: 430px) {
       overflow: hidden;
+      justify-content: flex-start;
+      padding-top: 140px;
 
       .first-segment-container {
         width: 100%;
@@ -101,7 +103,7 @@
 
         .joinus-desc {
           font-size: 18px;
-          margin-top: 40px;
+          margin-top: 30px;
           width: 100%;
         }
 
@@ -204,16 +206,25 @@
         padding-right: 50px;
       }
 
-      .project-segment-left {
-        position: absolute;
-        opacity: 0.15;
-      }
 
       .project-segment-left,
       .project-segment-right {
         .project-image {
           padding-bottom: 0px;
-          margin-top: 50px;
+          margin-top: 0px;
+        }
+      }
+    }
+    @media (max-width: 950px) {
+      .project-segment-container {
+        flex-direction: column;
+      }
+      .project-segment-left,
+      .project-segment-right {
+        width: 100%;
+        margin-bottom: 20px;
+        .project-image {
+          width: 100%;
         }
       }
     }
