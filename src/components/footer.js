@@ -55,7 +55,7 @@ export default function Footer(props) {
           <Link to="/education/">EDUCATION</Link>
         </div>
 
-        {/* =============== BIOFEEDBACK =============== */}
+        {/* =============== JOIN US =============== */}
         <div
           className="each-link"
           onClick={scrollToTop}
@@ -63,7 +63,7 @@ export default function Footer(props) {
           role="button"
           tabIndex={0}
         >
-          <Link to="/biofeedback/">BIOFEEDBACK</Link>
+          <Link to="/joinus/">JOIN US</Link>
         </div>
 
         {/* =============== SPACE DEVELOPMENT =============== */}
