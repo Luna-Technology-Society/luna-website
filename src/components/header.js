@@ -26,7 +26,7 @@ export default function Header(props) {
     if (!props.isLanding) {
       setNavbar(true)
     }
-    if (props.isBiofeedback) {
+    if (props.isJoinus) {
       setLogo(main_logo)
     }
     if (props.isSpaceDev) {
@@ -108,7 +108,7 @@ export default function Header(props) {
               role="button"
               tabIndex={0}
             >
-              {props.isBiofeedback ? (
+              {props.isEducation ? (
                 <div>EDUCATION</div>
               ) : (
                 <Link to="/education/">EDUCATION</Link>
@@ -155,7 +155,7 @@ export default function Header(props) {
           role="button"
           tabIndex={0}
         >
-          {props.isEducation ? (
+          {props.isJoinus ? (
             <div>JOIN US</div>
           ) : (
             <Link to="/joinus/">JOIN US</Link>

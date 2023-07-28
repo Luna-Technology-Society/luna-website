@@ -37,7 +37,7 @@ export default function JoinUs() {
         delay={300}
         releasePointerEvents={600}
       ></PageTransition>
-      <Header isBiofeedback />
+      <Header isJoinus />
       <section className="first-segment">
         <div className="first-segment-container">
           <h1
