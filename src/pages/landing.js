@@ -228,6 +228,7 @@ export default function Landing() {
           className="each-partner"
           data-aos="zoom-in"
           href="https://naukowawioska.pl/"
+          target="_blank"
         >
           <img src={naukowaWioska} alt="Naukowa Wioska" />
         </a>
