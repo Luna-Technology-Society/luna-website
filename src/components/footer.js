@@ -108,8 +108,8 @@ export default function Footer(props) {
         </a>
       </div>
       <div className="footer-copyright">
-        Copyright ©2022 Stowarzyszenie Luna Technology Society -
-        info@lunatech.pl
+        Copyright ©{new Date().getFullYear()} Stowarzyszenie Luna Technology
+        Society - info@lunatech.pl
       </div>
       <div className="footer-copyright" style={{ fontWeight: "bold" }}>
         KRS: 0000546604 NIP: 7343530379 REGON: 360982412
