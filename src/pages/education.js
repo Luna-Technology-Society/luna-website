@@ -21,6 +21,7 @@ export default function Education() {
       duration: 500,
       delay: 0,
       smooth: "easeInOutQuart",
+      offset: -99,
     })
   }
   useEffect(() => {

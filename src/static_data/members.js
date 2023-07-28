@@ -36,7 +36,7 @@ export const managmentMemebers = [
 export const otherMembers = [
   {
     name: "Mateusz Szewczyk",
-    role: "BioFeedback Supervisor",
+    role: "Luna Member",
   },
   {
     name: "Oskar Mróz",
