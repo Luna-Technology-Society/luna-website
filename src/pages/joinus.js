@@ -114,7 +114,7 @@ export default function JoinUs() {
               <span>Application form: </span>{" "}
               <div className="media-icons">
                 <a
-                  href="https://forms.gle/9wyh6rK8eSwPBBoP9"
+                  href="https://forms.gle/VEmDPRQFMYkb2G3Z6"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -159,7 +159,7 @@ export default function JoinUs() {
               <span>Application form: </span>{" "}
               <div className="media-icons">
                 <a
-                  href="https://forms.gle/9wyh6rK8eSwPBBoP9"
+                  href="https://forms.gle/VEmDPRQFMYkb2G3Z6"
                   target="_blank"
                   rel="noreferrer"
                 >
